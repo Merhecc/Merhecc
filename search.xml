@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>10月新番《香格里拉边境》</title>
+    <url>/Merhecc/2023/09/29/01/</url>
+    <content><![CDATA[<p>话说香格里拉到底是什么啊，国外有香格里拉酒店、饭店，霓虹有动漫，云南有香格里拉市，我们这有香格里拉小区，在网上搜也没个所以然，这动漫男主还是个鸟人。</p>
+<p><img src="/Merhecc/./images/01%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E8%BE%B9%E5%A2%83.jpg" alt="兔子" title="兔子npc"><img src="/Merhecc/./images/02%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E8%BE%B9%E5%A2%83.jpg" alt="鸟人" title="男主"></p>
+]]></content>
+      <categories>
+        <category>ACG</category>
+      </categories>
+      <tags>
+        <tag>anime</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决Hexo部署github问题</title>
     <url>/Merhecc/2023/10/01/02/</url>
     <content><![CDATA[<p>首先问题出在部署上面，在config.yml中url设置了github仓库之后，根目录会自动变成github仓库目录，所以会多一层路由，例如merhecc.github.io&#x2F;Merhecc&#x2F;。就会多一层&#x2F;Merhecc&#x2F;。</p>
@@ -26,42 +39,9 @@
       </tags>
   </entry>
   <entry>
-    <title>10月新番《香格里拉边境》</title>
-    <url>/Merhecc/2023/09/29/01/</url>
-    <content><![CDATA[<p>话说香格里拉到底是什么啊，国外有香格里拉酒店、饭店，霓虹有动漫，云南有香格里拉市，我们这有香格里拉小区，在网上搜也没个所以然，这动漫男主还是个鸟人。</p>
-<p><img src="/Merhecc/./images/01%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E8%BE%B9%E5%A2%83.jpg" alt="兔子" title="兔子npc"><img src="/Merhecc/./images/02%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E8%BE%B9%E5%A2%83.jpg" alt="鸟人" title="男主"></p>
-]]></content>
-      <categories>
-        <category>ACG</category>
-      </categories>
-      <tags>
-        <tag>anime</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>sitemap</title>
     <url>/Merhecc/2023/10/01/sitemap/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>JavaScript中的Apply()方法</title>
-    <url>/Merhecc/2023/10/08/JavaScript/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
-<p><strong>2、apply将数组转换为参数</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
   </entry>
   <entry>
     <title>展开运算符</title>
@@ -131,14 +111,18 @@
       </tags>
   </entry>
   <entry>
-    <title>数据类型检测</title>
-    <url>/Merhecc/2023/10/12/JavaScript/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
-    <content><![CDATA[<ol>
-<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
-<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
-<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
-</ol>
-]]></content>
+    <title>JavaScript中的Apply()方法</title>
+    <url>/Merhecc/2023/10/08/JavaScript/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
+<p><strong>2、apply将数组转换为参数</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>技术</category>
       </categories>
@@ -205,6 +189,22 @@
       </tags>
   </entry>
   <entry>
+    <title>数据类型检测</title>
+    <url>/Merhecc/2023/10/12/JavaScript/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
+    <content><![CDATA[<ol>
+<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
+<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
+<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Array.of()方法</title>
     <url>/Merhecc/2023/10/12/JavaScript/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a>Array.of()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
@@ -248,6 +248,34 @@
       </tags>
   </entry>
   <entry>
+    <title>数组实例的entries()、keys()、values()方法</title>
+    <url>/Merhecc/2023/10/12/JavaScript/11%E3%80%81%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84entries()%E3%80%81keys()%E3%80%81values()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="数组实例的entries-、keys-、values-方法"><a href="#数组实例的entries-、keys-、values-方法" class="headerlink" title="数组实例的entries()、keys()、values()方法"></a>数组实例的entries()、keys()、values()方法</h1><blockquote>
+<p>ES6新增的这几个方法，都是用于遍历数组</p>
+<blockquote>
+<p><strong>key()</strong> 对 <strong>键名</strong> 遍历</p>
+<p><strong>values()</strong> 对 <strong>键值</strong> 遍历</p>
+<p><strong>entries()</strong> 对 <strong>键值对</strong> 遍历</p>
+</blockquote>
+</blockquote>
+<h3 id="keys"><a href="#keys" class="headerlink" title="keys()"></a>keys()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">keys</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(index);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="values"><a href="#values" class="headerlink" title="values()"></a>values()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> elem <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">values</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(elem);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &#x27;a&#x27;</span></span><br><span class="line"><span class="comment">// &#x27;b&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="entries"><a href="#entries" class="headerlink" title="entries()"></a>entries()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [index, elem] <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">entries</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(index, elem);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0 &quot;a&quot;</span></span><br><span class="line"><span class="comment">// 1 &quot;b&quot;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>也可以使用 entries.next().value 一项一项遍历对象</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数组实例的find()和findIndex()方法</title>
     <url>/Merhecc/2023/10/12/JavaScript/10%E3%80%81%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84find()%E5%92%8CfindIndex()%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="数组实例的find-和findIndex-方法"><a href="#数组实例的find-和findIndex-方法" class="headerlink" title="数组实例的find()和findIndex()方法"></a>数组实例的find()和findIndex()方法</h1><h3 id="find"><a href="#find" class="headerlink" title="find()"></a>find()</h3><blockquote>
@@ -277,34 +305,6 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>].<span class="title function_">fill</span>(<span class="number">7</span>, <span class="number">1</span>, <span class="number">2</span>)</span><br><span class="line"><span class="comment">// [&#x27;a&#x27;, 7, &#x27;c&#x27;]</span></span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数组实例的entries()、keys()、values()方法</title>
-    <url>/Merhecc/2023/10/12/JavaScript/11%E3%80%81%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84entries()%E3%80%81keys()%E3%80%81values()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="数组实例的entries-、keys-、values-方法"><a href="#数组实例的entries-、keys-、values-方法" class="headerlink" title="数组实例的entries()、keys()、values()方法"></a>数组实例的entries()、keys()、values()方法</h1><blockquote>
-<p>ES6新增的这几个方法，都是用于遍历数组</p>
-<blockquote>
-<p><strong>key()</strong> 对 <strong>键名</strong> 遍历</p>
-<p><strong>values()</strong> 对 <strong>键值</strong> 遍历</p>
-<p><strong>entries()</strong> 对 <strong>键值对</strong> 遍历</p>
-</blockquote>
-</blockquote>
-<h3 id="keys"><a href="#keys" class="headerlink" title="keys()"></a>keys()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">keys</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(index);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="values"><a href="#values" class="headerlink" title="values()"></a>values()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> elem <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">values</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(elem);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &#x27;a&#x27;</span></span><br><span class="line"><span class="comment">// &#x27;b&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="entries"><a href="#entries" class="headerlink" title="entries()"></a>entries()</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> [index, elem] <span class="keyword">of</span> [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>].<span class="title function_">entries</span>()) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(index, elem);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 0 &quot;a&quot;</span></span><br><span class="line"><span class="comment">// 1 &quot;b&quot;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>也可以使用 entries.next().value 一项一项遍历对象</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>技术</category>
