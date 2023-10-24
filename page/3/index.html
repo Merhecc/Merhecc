@@ -200,6 +200,306 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Array.from()方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-11 10:34:44 / 修改时间：18:31:04" itemprop="dateCreated datePublished" datetime="2023-10-11T10:34:44+08:00">2023-10-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Array-from-方法"><a href="#Array-from-方法" class="headerlink" title="Array.from()方法"></a>Array.from()方法</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>将 类数组对象（array-like object）和 可遍历对象（iterable object）转换为真数组</p>
+<h4 id="1、类数组对象"><a href="#1、类数组对象" class="headerlink" title="1、类数组对象"></a>1、类数组对象</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;c&#x27;</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//ES5的写法</span></span><br><span class="line"><span class="keyword">var</span> arr1 = [].<span class="property">slice</span>.<span class="title function_">call</span>(arrayLike); <span class="comment">// [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//ES6的写法</span></span><br><span class="line"><span class="keyword">let</span> arr2 = <span class="title class_">Array</span>.<span class="title function_">from</span>(arrayLike); <span class="comment">// [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2、可遍历对象-NodeList集合、arguments对象"><a href="#2、可遍历对象-NodeList集合、arguments对象" class="headerlink" title="2、可遍历对象 - NodeList集合、arguments对象"></a>2、可遍历对象 - NodeList集合、arguments对象</h4><p>常见的类数组对象是DOM操作返回的NodeList集合，以及函数内部的arguments对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// NodeList 对象</span></span><br><span class="line"><span class="keyword">let</span> ps = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;p&#x27;</span>);</span><br><span class="line"><span class="title class_">Array</span>.<span class="title function_">from</span>(ps).<span class="title function_">forEach</span>(<span class="keyword">function</span> (<span class="params">p</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(p);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// arguments 对象</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> args = <span class="title class_">Array</span>.<span class="title function_">from</span>(<span class="variable language_">arguments</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>任何有length属性的对象，都可以通过Array.from方法转换为数组，这种情况展开运算符无法转换</p>
+</blockquote>
+<h3 id="元素处理"><a href="#元素处理" class="headerlink" title="元素处理"></a>元素处理</h3><p>Array.from还可以接收第二个参数，作用类似于数组的map方法，用来对每个元素进行处理，将处理后的值放入返回的数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="string">&#x27;0&#x27;</span>: <span class="number">1</span>, <span class="comment">// &#x27;0&#x27;代表类数组下标为0</span></span><br><span class="line">  <span class="string">&#x27;1&#x27;</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="string">&#x27;2&#x27;</span>: <span class="number">3</span>,</span><br><span class="line">  <span class="attr">length</span>: <span class="number">3</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">arrayLike = <span class="title class_">Array</span>.<span class="title function_">from</span>(arrayLike, <span class="function"><span class="params">x</span> =&gt;</span> x * x);   <span class="comment">// [1, 4, 9]</span></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">arrayLike = <span class="title class_">Array</span>.<span class="title function_">from</span>(arrayLike).<span class="title function_">map</span>(<span class="function"><span class="params">x</span> =&gt;</span> x * x);</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">arrayLike = <span class="title class_">Array</span>.<span class="title function_">from</span>([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="function"><span class="params">x</span> =&gt;</span> x * x)</span><br></pre></td></tr></table></figure>
+
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><p>1、取出DOM节点的文本内容</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> spans = <span class="variable language_">document</span>.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;span.name&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//map()</span></span><br><span class="line"><span class="keyword">let</span> names1 = <span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">map</span>.<span class="title function_">call</span>(spans, <span class="function"><span class="params">s</span> =&gt;</span> s.<span class="property">textContent</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//Array.from()</span></span><br><span class="line"><span class="keyword">let</span> names2 = <span class="title class_">Array</span>.<span class="title function_">from</span>(spans, <span class="function"><span class="params">s</span> =&gt;</span> s.<span class="property">textContent</span>);</span><br></pre></td></tr></table></figure>
+
+<p>2、处理稀疏数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr1 = <span class="title class_">Array</span>.<span class="title function_">from</span>([<span class="number">1</span>,,<span class="number">2</span>,,<span class="number">3</span>], <span class="function"><span class="params">n</span> =&gt;</span> n || <span class="number">0</span>); <span class="comment">// [1, 0, 2, 0, 3]</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>n</code> 代表数组中的每个元素。表达式 <code>n || 0</code> 的含义是，如果<code>n</code>的值是假（如<code>undefined</code>、<code>null</code>、<code>false</code>等），则返回<code>0</code>，否则返回<code>n</code>的原始值。这就是如何将<code>undefined</code>替换为<code>0</code>的原理。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/" class="post-title-link" itemprop="url">增强对象属性</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-08 11:29:44" itemprop="dateCreated datePublished" datetime="2023-10-08T11:29:44+08:00">2023-10-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-12 11:09:10" itemprop="dateModified" datetime="2023-10-12T11:09:10+08:00">2023-10-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>数组结构：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [x, y] = [<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<p><strong>值交换：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[x, y] = [y, x];</span><br></pre></td></tr></table></figure>
+
+<p><strong>对象解构：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123; x, y &#125;;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj); <span class="comment">// 输出结果为 &#123;x: &#x27;b&#x27;, y: &#x27;a&#x27;&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">JavaScript中的Apply()方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-08 10:17:54" itemprop="dateCreated datePublished" datetime="2023-10-08T10:17:54+08:00">2023-10-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-11 14:38:10" itemprop="dateModified" datetime="2023-10-11T14:38:10+08:00">2023-10-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
+<p><strong>2、apply将数组转换为参数</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/01/sitemap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">

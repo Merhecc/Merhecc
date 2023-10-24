@@ -200,6 +200,306 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/24/Mockjs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/24/Mockjs/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-24 10:14:32 / 修改时间：10:44:04" itemprop="dateCreated datePublished" datetime="2023-10-24T10:14:32+08:00">2023-10-24</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/24/Mockjs/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/24/Mockjs/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Vue3-Mockjs使用详解"><a href="#Vue3-Mockjs使用详解" class="headerlink" title="Vue3 Mockjs使用详解"></a>Vue3 Mockjs使用详解</h1><blockquote>
+<p>Mockjs是一种模拟数据的工具</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install mockjs --save-dev</span><br></pre></td></tr></table></figure>
+
+<h3 id="演示登录模拟数据-使用步骤"><a href="#演示登录模拟数据-使用步骤" class="headerlink" title="演示登录模拟数据 - 使用步骤"></a>演示登录模拟数据 - 使用步骤</h3><h2 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h2><p>在main.js中导入mock文件，并创建src&#x2F;mock&#x2F;index.js</p>
+<blockquote>
+<p>src&#x2F;main.js</p>
+</blockquote>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./mock/index.js&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>src&#x2F;mock&#x2F;index.js</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Mock</span> <span class="keyword">from</span> <span class="string">&#x27;mockjs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Mock</span>.<span class="title function_">mock</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="string">&#x27;post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">msg</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="attr">content</span>: &#123;</span><br><span class="line">    <span class="attr">token</span>:</span><br><span class="line">      <span class="string">&#x27;123123123123&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>Mock.mock(‘&#x2F;api&#x2F;login’, ‘post’, {…})&#96;：这是 Mock.js 提供的用于模拟HTTP请求和响应的方法。</p>
+<ul>
+<li><code>&#39;/api/login&#39;</code>：指定了模拟请求的URL路径，这意味着当你的前端应用发送 POST 请求到 <code>/api/login</code> 路径时，Mock.js 将捕获该请求并返回下面指定的响应数据。</li>
+<li><code>&#39;post&#39;</code>：指定了HTTP请求方法，这里是 POST。这意味着模拟的响应将仅对 POST 请求有效。</li>
+<li><code>&#123;...&#125;</code>：这个对象包含了模拟的响应数据，其中包括：<ul>
+<li><code>code: 0</code>：模拟的响应中的状态码，通常 <code>0</code> 表示成功。</li>
+<li><code>msg: &#39;success&#39;</code>：模拟的响应消息，通常用于描述请求结果。</li>
+<li><code>content: &#123;...&#125;</code>：模拟的响应内容。在这个示例中，<code>content</code> 包含一个名为 <code>token</code> 的字段，其值为 <code>&#39;123123123123&#39;</code>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结：</strong>当你的前端应用发送一个 POST 请求到 <code>/api/login</code> 时，Mock.js 将拦截该请求，并返回模拟的响应数据，其中包括状态码、消息和一个包含令牌的内容字段。</p>
+<h2 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h2><p>在封装的 axios 模块内，将 baseURL 改为 baseURL &#x3D; ‘‘ ， 对于vue3来说目录一般是 src&#x2F;utils&#x2F;request.js。</p>
+<p>这样做的目的是让 mockjs 能够稳定成功拦截到请求</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>保证 mock&#x2F;index.js 的请求位置和请求模块中的请求位置相同，对于vue3来说目录一般是 src&#x2F;api&#x2F;xxxx.js。</p>
+<h3 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h3><p>对于登录模拟，成功过了数据验证，但是无法跳转</p>
+<blockquote>
+<p>一般是路由模块的导航守卫设置了无法离开登录页，注释掉它</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/24/Ajax/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/24/Ajax/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-24 09:47:31 / 修改时间：10:14:34" itemprop="dateCreated datePublished" datetime="2023-10-24T09:47:31+08:00">2023-10-24</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/24/Ajax/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/24/Ajax/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><h2 id="什么是-AJAX？"><a href="#什么是-AJAX？" class="headerlink" title="什么是 AJAX？"></a>什么是 AJAX？</h2><blockquote>
+<p>AJAX &#x3D; <em>A</em>synchronous <em>J</em>avaScript <em>A</em>nd <em>X</em>ML.</p>
+</blockquote>
+<p>AJAX 并非编程语言。AJAX 仅仅组合了：</p>
+<ul>
+<li>浏览器内建的 XMLHttpRequest 对象（从 web 服务器请求数据）</li>
+<li>JavaScript 和 HTML DOM（显示或使用数据）</li>
+</ul>
+<p>Ajax 是一个令人误导的名称。Ajax 应用程序可能使用 XML 来传输数据，但将数据作为纯文本或 JSON 文本传输也同样常见。</p>
+<p>Ajax 允许通过与场景后面的 Web 服务器交换数据来异步更新网页。这意味着可以更新网页的部分，而不需要重新加载整个页面。</p>
+<p><img src="https://www.w3school.com.cn/i/ajax.gif" alt="Ajax工作示意图"></p>
+<ol>
+<li><p>网页中发生一个事件（页面加载、按钮点击）</p>
+</li>
+<li><p>由 JavaScript 创建 XMLHttpRequest 对象</p>
+</li>
+<li><p>XMLHttpRequest 对象向 web 服务器发送请求</p>
+</li>
+<li><p>服务器处理该请求</p>
+</li>
+<li><p>服务器将响应发送回网页</p>
+</li>
+<li><p>由 JavaScript 读取响应</p>
+</li>
+<li><p>由 JavaScript 执行正确的动作（比如更新页面）</p>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/js/js_ajax_intro.asp">来源于W3school</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/" class="post-title-link" itemprop="url">导航守卫</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-19 10:26:20 / 修改时间：10:57:35" itemprop="dateCreated datePublished" datetime="2023-10-19T10:26:20+08:00">2023-10-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="beforeEach"><a href="#beforeEach" class="headerlink" title="beforeEach()"></a>beforeEach()</h3><blockquote>
+<p>beforeEach() 是 Vue Router 中的一个导航守卫（Navigation Guard）。<a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html">官网链接</a></p>
+</blockquote>
+<p>导航守卫用于控制路由的导航，允许你在路由切换之前执行一些操作，如身份验证、权限检查、数据加载等。<code>beforeEach()</code> 是其中之一，它会在每次路由切换之前执行。</p>
+<p>具体来说，<code>beforeEach()</code> 用于在用户试图导航到某个路由前执行一些逻辑。你可以定义这个守卫来检查用户的身份是否有效，验证权限，或执行其他预导航的操作。如果 <code>beforeEach()</code> 中的逻辑返回 <code>false</code>，则导航将被中止，用户将不会切换到新的路由。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;./router&#x27;</span></span><br><span class="line"></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 在路由导航前执行一些操作</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 检查用户是否已登录</span></span><br><span class="line">  <span class="keyword">if</span> (to.<span class="property">meta</span>.<span class="property">requiresAuth</span> &amp;&amp; !<span class="title function_">userIsLoggedIn</span>()) &#123;</span><br><span class="line">    <span class="comment">// 如果需要身份验证且用户未登录，重定向到登录页面</span></span><br><span class="line">    <span class="title function_">next</span>(<span class="string">&#x27;/login&#x27;</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 如果不需要身份验证或用户已登录，允许继续导航</span></span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，<code>beforeEach()</code> 导航守卫用于检查路由是否需要身份验证（<code>to.meta.requiresAuth</code>），以及用户是否已登录（<code>userIsLoggedIn()</code>）。如果需要身份验证且用户未登录，它会重定向用户到登录页面；否则，它会允许用户继续导航。</p>
+<p>总之，<code>beforeEach()</code> 导航守卫是 Vue Router 中的一种强大的工具，用于控制路由导航的行为，实现身份验证、权限管理和其他导航前的逻辑。</p>
+<h4 id="Vue3实际使用"><a href="#Vue3实际使用" class="headerlink" title="Vue3实际使用"></a>Vue3实际使用</h4><p>src&#x2F;router&#x2F;index.vue</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 登录访问拦截 =&gt; 默认放行</span></span><br><span class="line"><span class="comment">// 根据返回值决定，放行还是拦截</span></span><br><span class="line"><span class="comment">//返回值：</span></span><br><span class="line"><span class="comment">// 1. undefined / true 直接放行</span></span><br><span class="line"><span class="comment">// 2. false 拦回 from 的地址页面</span></span><br><span class="line"><span class="comment">// 3. 具体路径 或 路径对象 拦截到对应的地址</span></span><br><span class="line"><span class="comment">//  &#x27;/login&#x27; &#123; name:&#x27;login&#x27; &#125;</span></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> userStore = <span class="title function_">useUserStore</span>()</span><br><span class="line">  <span class="keyword">if</span> (!userStore.<span class="property">token</span> &amp;&amp; to.<span class="property">path</span> !== <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;/login&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/18/%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -888,292 +1188,6 @@
 <h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;hello&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="string">&quot;5&quot;</span>)); <span class="comment">// false，不同类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(+<span class="number">0</span>, -<span class="number">0</span>)); <span class="comment">// false，区分 +0 和 -0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="title class_">NaN</span>, <span class="title class_">NaN</span>)); <span class="comment">// true，区分 NaN</span></span><br></pre></td></tr></table></figure>
 
 <p><code>Object.is()</code> 的主要优点是它能够正确处理一些特殊情况，例如区分正零和负零，以及区分不同的 <code>NaN</code> 值。它在某些情况下更精确，但在其他情况下可能与 <code>===</code> 行为相同。通常情况下，你可以使用 <code>Object.is()</code> 来进行更严格的值比较，尤其是需要考虑特殊值的情况。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/Merhecc/images/head.jpg">
-      <meta itemprop="name" content="Merhe">
-      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Merhe's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/" class="post-title-link" itemprop="url">方法的name属性</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-10-13 10:08:20 / 修改时间：10:17:10" itemprop="dateCreated datePublished" datetime="2023-10-13T10:08:20+08:00">2023-10-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="方法的name属性"><a href="#方法的name属性" class="headerlink" title="方法的name属性"></a>方法的name属性</h1><blockquote>
-<p>在 JavaScript 中，函数对象有一个 <code>name</code> 属性，该属性存储了函数的名称。这是一个<strong>只读属性</strong>，它表示<strong>函数的名字</strong>。函数的名称通常是在函数定义时指定的标识符。</p>
-</blockquote>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sayHello.<span class="property">name</span>); <span class="comment">// &quot;sayHello&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，在箭头函数中，<code>name</code> 属性的行为可能会有所不同。箭头函数的 <code>name</code> 属性通常是空字符串，除非它是通过变量赋值给一个标识符的。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">greet</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Greeting!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(greet.<span class="property">name</span>); <span class="comment">// &quot;&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>name</code> 属性对于函数的调试和日志记录非常有用，因为它可以让你在不执行函数的情况下获取函数的名称。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/Merhecc/images/head.jpg">
-      <meta itemprop="name" content="Merhe">
-      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Merhe's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">属性名表达式</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-10-12 18:24:44 / 修改时间：18:32:14" itemprop="dateCreated datePublished" datetime="2023-10-12T18:24:44+08:00">2023-10-12</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="属性名表达式"><a href="#属性名表达式" class="headerlink" title="属性名表达式"></a>属性名表达式</h1><blockquote>
-<ol>
-<li>在JavaScript中，属性名表达式是用来指定对象的属性名的一种方式。</li>
-<li>属性名可以是一个字符串、一个变量、一个数字或一个表达式。</li>
-<li>属性名表达式允许你以动态的方式定义对象的属性名，而不仅仅是硬编码的字符串。</li>
-</ol>
-</blockquote>
-<h3 id="JavaScript语言定义对象的属性有两种方法"><a href="#JavaScript语言定义对象的属性有两种方法" class="headerlink" title="JavaScript语言定义对象的属性有两种方法"></a>JavaScript语言定义对象的属性有两种方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line">obj.<span class="property">foo</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line">obj[<span class="string">&#x27;a&#x27;</span> + <span class="string">&#x27;bc&#x27;</span>] = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>使用字符串字面量作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用变量作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> propertyName = <span class="string">&quot;address&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [propertyName]: <span class="string">&quot;123 Main St&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用数字作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">const</span> colors = &#123;</span><br><span class="line">  [index]: <span class="string">&quot;red&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用表达式作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> prefix = <span class="string">&quot;user_&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> userId = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">const</span> users = &#123;</span><br><span class="line">  [prefix + userId]: <span class="string">&quot;JohnDoe&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用计算属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> prop = <span class="string">&quot;age&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>,</span><br><span class="line">  [prop]: <span class="number">25</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/Merhecc/images/head.jpg">
-      <meta itemprop="name" content="Merhe">
-      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Merhe's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/" class="post-title-link" itemprop="url">属性的简洁表示法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-10-12 18:18:44 / 修改时间：18:32:11" itemprop="dateCreated datePublished" datetime="2023-10-12T18:18:44+08:00">2023-10-12</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h1><blockquote>
-<p>对象属性的简洁表示法是一种语法糖，允许你更简洁地定义对象属性</p>
-</blockquote>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>当属性名和属性值的变量名相同时，你可以只写变量名，而不需要重复书写属性名和赋值符。</p>
-<h4 id="对象属性："><a href="#对象属性：" class="headerlink" title="对象属性："></a>对象属性：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;Alice&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用简洁表示法创建对象</span></span><br><span class="line"><span class="keyword">const</span> person = &#123; name, age &#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="方法定义："><a href="#方法定义：" class="headerlink" title="方法定义："></a>方法定义：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> greeting = &#123;</span><br><span class="line">  <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">greeting.<span class="title function_">sayHello</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 
       
     </div>
