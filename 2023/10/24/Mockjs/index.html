@@ -24,15 +24,15 @@
 
   <meta name="description" content="Vue3 Mockjs使用详解 Mockjs是一种模拟数据的工具  安装1npm install mockjs --save-dev  演示登录模拟数据 - 使用步骤一、在main.js中导入mock文件，并创建src&#x2F;mock&#x2F;index.js  src&#x2F;main.js  1import &amp;#x27;.&#x2F;mock&#x2F;index.js&amp;#x27;   src&#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Merhe&#39;s Blog">
+<meta property="og:title" content="Mockjs">
 <meta property="og:url" content="https://merhecc.github.io/Merhecc/2023/10/24/Mockjs/index.html">
 <meta property="og:site_name" content="Merhe&#39;s Blog">
 <meta property="og:description" content="Vue3 Mockjs使用详解 Mockjs是一种模拟数据的工具  安装1npm install mockjs --save-dev  演示登录模拟数据 - 使用步骤一、在main.js中导入mock文件，并创建src&#x2F;mock&#x2F;index.js  src&#x2F;main.js  1import &amp;#x27;.&#x2F;mock&#x2F;index.js&amp;#x27;   src&#x2F;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-24T02:14:32.275Z">
-<meta property="article:modified_time" content="2023-10-24T02:44:04.537Z">
+<meta property="article:modified_time" content="2023-10-24T02:49:20.964Z">
 <meta property="article:author" content="Merhe">
-<meta property="article:tag" content="日志, 编程, 学习">
+<meta property="article:tag" content="mockjs">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://merhecc.github.io/Merhecc/2023/10/24/Mockjs/">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title> | Merhe's Blog</title>
+  <title>Mockjs | Merhe's Blog</title>
   
 
 
@@ -216,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          Mockjs
         </h1>
 
         <div class="post-meta">
@@ -227,7 +227,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-10-24 10:14:32 / 修改时间：10:44:04" itemprop="dateCreated datePublished" datetime="2023-10-24T10:14:32+08:00">2023-10-24</time>
+              <time title="创建时间：2023-10-24 10:14:32 / 修改时间：10:49:20" itemprop="dateCreated datePublished" datetime="2023-10-24T10:14:32+08:00">2023-10-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
             </span>
 
           
@@ -278,6 +287,7 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Mock</span> <span class="keyword">from</span> <span class="string">&#x27;mockjs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Mock</span>.<span class="title function_">mock</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="string">&#x27;post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">msg</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="attr">content</span>: &#123;</span><br><span class="line">    <span class="attr">token</span>:</span><br><span class="line">      <span class="string">&#x27;123123123123&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
+<p><strong>上述代码解释：</strong></p>
 <p>Mock.mock(‘&#x2F;api&#x2F;login’, ‘post’, {…})&#96;：这是 Mock.js 提供的用于模拟HTTP请求和响应的方法。</p>
 <ul>
 <li><code>&#39;/api/login&#39;</code>：指定了模拟请求的URL路径，这意味着当你的前端应用发送 POST 请求到 <code>/api/login</code> 路径时，Mock.js 将捕获该请求并返回下面指定的响应数据。</li>
@@ -305,6 +315,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/Merhecc/tags/mockjs/" rel="tag"># mockjs</a>
+          </div>
 
         
 
@@ -312,10 +325,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Merhecc/2023/10/24/Ajax/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
+    <a href="/Merhecc/2023/10/24/Ajax/" rel="prev" title="Ajax">
+      <i class="fa fa-chevron-left"></i> Ajax
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/" rel="next" title="Cookie、Session、Token、JWT">
+      Cookie、Session、Token、JWT <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     

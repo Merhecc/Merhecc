@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>解决Hexo部署github问题</title>
-    <url>/Merhecc/2023/10/01/02/</url>
-    <content><![CDATA[<p>首先问题出在部署上面，在config.yml中url设置了github仓库之后，根目录会自动变成github仓库目录，所以会多一层路由，例如merhecc.github.io&#x2F;Merhecc&#x2F;。就会多一层&#x2F;Merhecc&#x2F;。</p>
-<p>解决方法就是把所有文件路径全部加上&#x2F;Merhecc&#x2F;，除此之外并没有找到其他好用的办法。</p>
+    <title>LeanCloud</title>
+    <url>/Merhecc/2023/10/01/03/</url>
+    <content><![CDATA[<p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -27,9 +26,10 @@
       </tags>
   </entry>
   <entry>
-    <title>LeanCloud</title>
-    <url>/Merhecc/2023/10/01/03/</url>
-    <content><![CDATA[<p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
+    <title>解决Hexo部署github问题</title>
+    <url>/Merhecc/2023/10/01/02/</url>
+    <content><![CDATA[<p>首先问题出在部署上面，在config.yml中url设置了github仓库之后，根目录会自动变成github仓库目录，所以会多一层路由，例如merhecc.github.io&#x2F;Merhecc&#x2F;。就会多一层&#x2F;Merhecc&#x2F;。</p>
+<p>解决方法就是把所有文件路径全部加上&#x2F;Merhecc&#x2F;，除此之外并没有找到其他好用的办法。</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -39,9 +39,188 @@
       </tags>
   </entry>
   <entry>
+    <title>Ajax</title>
+    <url>/Merhecc/2023/10/24/Ajax/</url>
+    <content><![CDATA[<h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><h2 id="什么是-AJAX？"><a href="#什么是-AJAX？" class="headerlink" title="什么是 AJAX？"></a>什么是 AJAX？</h2><blockquote>
+<p>AJAX &#x3D; <em>A</em>synchronous <em>J</em>avaScript <em>A</em>nd <em>X</em>ML.</p>
+</blockquote>
+<p>AJAX 并非编程语言。AJAX 仅仅组合了：</p>
+<ul>
+<li>浏览器内建的 XMLHttpRequest 对象（从 web 服务器请求数据）</li>
+<li>JavaScript 和 HTML DOM（显示或使用数据）</li>
+</ul>
+<p>Ajax 是一个令人误导的名称。Ajax 应用程序可能使用 XML 来传输数据，但将数据作为纯文本或 JSON 文本传输也同样常见。</p>
+<p>Ajax 允许通过与场景后面的 Web 服务器交换数据来异步更新网页。这意味着可以更新网页的部分，而不需要重新加载整个页面。</p>
+<p><img src="https://www.w3school.com.cn/i/ajax.gif" alt="Ajax工作示意图"></p>
+<ol>
+<li><p>网页中发生一个事件（页面加载、按钮点击）</p>
+</li>
+<li><p>由 JavaScript 创建 XMLHttpRequest 对象</p>
+</li>
+<li><p>XMLHttpRequest 对象向 web 服务器发送请求</p>
+</li>
+<li><p>服务器处理该请求</p>
+</li>
+<li><p>服务器将响应发送回网页</p>
+</li>
+<li><p>由 JavaScript 读取响应</p>
+</li>
+<li><p>由 JavaScript 执行正确的动作（比如更新页面）</p>
+</li>
+</ol>
+<p><a href="https://www.w3school.com.cn/js/js_ajax_intro.asp">来源于W3school</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Ajax</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cookie、Session、Token、JWT</title>
+    <url>/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/</url>
+    <content><![CDATA[<h1 id="Cookie、Session、Token、JWT"><a href="#Cookie、Session、Token、JWT" class="headerlink" title="Cookie、Session、Token、JWT"></a>Cookie、Session、Token、JWT</h1><ol>
+<li><strong>Cookie（HTTP Cookie）</strong>:<ul>
+<li><strong>定义</strong>：Cookie是一种小型文本文件，存储在用户的计算机上，由服务器通过HTTP协议发送到用户的浏览器。它通常包含了一些用户状态信息，例如登录凭证、会话标识、用户首选项等。</li>
+<li><strong>工作原理</strong>：服务器在HTTP响应头中设置Cookie，浏览器接收并存储Cookie。每次浏览器向服务器发送请求时，它会自动附上与特定域名相关的Cookie数据。</li>
+<li><strong>用途</strong>：主要用于跟踪用户的状态，例如保持用户登录状态、存储购物车内容等。</li>
+</ul>
+</li>
+<li><strong>Session</strong>:<ul>
+<li><strong>定义</strong>：Session是一种服务器端存储用户数据的方式，与Cookie结合使用，用于跟踪用户的会话状态。通常，服务器为每个会话创建一个唯一的会话ID，并将相关数据存储在服务器上。</li>
+<li><strong>工作原理</strong>：当用户访问应用时，服务器会生成一个唯一的会话ID，并将其存储在Cookie中。服务器使用该ID来识别用户，并在服务器端存储会话数据。</li>
+<li><strong>用途</strong>：用于保持用户的登录状态、存储用户特定数据（如购物车内容），在用户会话期间保持数据一致性。</li>
+</ul>
+</li>
+<li><strong>Token</strong>:<ul>
+<li><strong>定义</strong>：Token是一种用于身份验证和授权的令牌，通常是一串字符，由服务器颁发给客户端，客户端随后将其用于向服务器请求资源。常见的类型包括访问令牌、刷新令牌等。</li>
+<li><strong>工作原理</strong>：用户在登录后，服务器颁发一个令牌给客户端。客户端随后将这个令牌包含在每个请求中，以便服务器可以验证用户身份和授权访问。</li>
+<li><strong>用途</strong>：用于实现无状态身份验证和授权，常用于API访问和单点登录系统。</li>
+</ul>
+</li>
+<li><strong>JWT（JSON Web Token）</strong>:<ul>
+<li><strong>定义</strong>：JWT是一种开放标准（RFC 7519），定义了一种用于在网络间传递声明的令牌格式。它使用JSON对象来传递信息，并签名以确保信息的完整性和可信度。</li>
+<li><strong>工作原理</strong>：JWT包括头部、负载和签名部分。头部描述了令牌类型和签名算法，负载包含声明（例如用户ID、角色等），签名用于验证令牌的真实性。</li>
+<li><strong>用途</strong>：JWT通常用于在不同服务之间安全传递用户身份信息，常见于单点登录、OAuth授权等场景。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web存储</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mockjs</title>
+    <url>/Merhecc/2023/10/24/Mockjs/</url>
+    <content><![CDATA[<h1 id="Vue3-Mockjs使用详解"><a href="#Vue3-Mockjs使用详解" class="headerlink" title="Vue3 Mockjs使用详解"></a>Vue3 Mockjs使用详解</h1><blockquote>
+<p>Mockjs是一种模拟数据的工具</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install mockjs --save-dev</span><br></pre></td></tr></table></figure>
+
+<h3 id="演示登录模拟数据-使用步骤"><a href="#演示登录模拟数据-使用步骤" class="headerlink" title="演示登录模拟数据 - 使用步骤"></a>演示登录模拟数据 - 使用步骤</h3><h2 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h2><p>在main.js中导入mock文件，并创建src&#x2F;mock&#x2F;index.js</p>
+<blockquote>
+<p>src&#x2F;main.js</p>
+</blockquote>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./mock/index.js&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>src&#x2F;mock&#x2F;index.js</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Mock</span> <span class="keyword">from</span> <span class="string">&#x27;mockjs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Mock</span>.<span class="title function_">mock</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="string">&#x27;post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">msg</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="attr">content</span>: &#123;</span><br><span class="line">    <span class="attr">token</span>:</span><br><span class="line">      <span class="string">&#x27;123123123123&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>上述代码解释：</strong></p>
+<p>Mock.mock(‘&#x2F;api&#x2F;login’, ‘post’, {…})&#96;：这是 Mock.js 提供的用于模拟HTTP请求和响应的方法。</p>
+<ul>
+<li><code>&#39;/api/login&#39;</code>：指定了模拟请求的URL路径，这意味着当你的前端应用发送 POST 请求到 <code>/api/login</code> 路径时，Mock.js 将捕获该请求并返回下面指定的响应数据。</li>
+<li><code>&#39;post&#39;</code>：指定了HTTP请求方法，这里是 POST。这意味着模拟的响应将仅对 POST 请求有效。</li>
+<li><code>&#123;...&#125;</code>：这个对象包含了模拟的响应数据，其中包括：<ul>
+<li><code>code: 0</code>：模拟的响应中的状态码，通常 <code>0</code> 表示成功。</li>
+<li><code>msg: &#39;success&#39;</code>：模拟的响应消息，通常用于描述请求结果。</li>
+<li><code>content: &#123;...&#125;</code>：模拟的响应内容。在这个示例中，<code>content</code> 包含一个名为 <code>token</code> 的字段，其值为 <code>&#39;123123123123&#39;</code>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结：</strong>当你的前端应用发送一个 POST 请求到 <code>/api/login</code> 时，Mock.js 将拦截该请求，并返回模拟的响应数据，其中包括状态码、消息和一个包含令牌的内容字段。</p>
+<h2 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h2><p>在封装的 axios 模块内，将 baseURL 改为 baseURL &#x3D; ‘‘ ， 对于vue3来说目录一般是 src&#x2F;utils&#x2F;request.js。</p>
+<p>这样做的目的是让 mockjs 能够稳定成功拦截到请求</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>保证 mock&#x2F;index.js 的请求位置和请求模块中的请求位置相同，对于vue3来说目录一般是 src&#x2F;api&#x2F;xxxx.js。</p>
+<h3 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h3><p>对于登录模拟，成功过了数据验证，但是无法跳转</p>
+<blockquote>
+<p>一般是路由模块的导航守卫设置了无法离开登录页，注释掉它</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>mockjs</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>sitemap</title>
     <url>/Merhecc/2023/10/01/sitemap/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>计算大小周时间</title>
+    <url>/Merhecc/2023/10/13/%E8%AE%A1%E7%AE%97%E5%A4%A7%E5%B0%8F%E5%91%A8%E6%97%B6%E9%97%B4/</url>
+    <content><![CDATA[<h1 id="计算大小周时间"><a href="#计算大小周时间" class="headerlink" title="计算大小周时间"></a>计算大小周时间</h1><blockquote>
+<p>能够随时查看不同人的大小周</p>
+</blockquote>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><p>输入内容：入职时间，入职当周为大周 or 小周</p>
+<p>结果反馈：本周为大周 or 小周</p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>需要计算当前时间和入职时间差，并且考虑</p>
+<ul>
+<li>平闰年 - 2月：平年28天，闰年29天</li>
+<li>1，3，5，7，8，10，12 有31天，其余（除开2月）为30天</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>工具需求</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>登录系统流程</title>
+    <url>/Merhecc/2023/10/18/%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="登录系统流程"><a href="#登录系统流程" class="headerlink" title="登录系统流程"></a>登录系统流程</h1><ul>
+<li>页面登录按钮触发异步方法</li>
+<li>异步方法内进行校验，校验通过，携带账号密码传入api模块方法</li>
+<li>api模块方法：发起get或post请求</li>
+<li>axios模块拦截请求，验证token存在？在响应拦截器里获取token，同时跳转页面</li>
+<li>pinia对token进行持久化</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>导航守卫</title>
+    <url>/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/</url>
+    <content><![CDATA[<h3 id="beforeEach"><a href="#beforeEach" class="headerlink" title="beforeEach()"></a>beforeEach()</h3><blockquote>
+<p>beforeEach() 是 Vue Router 中的一个导航守卫（Navigation Guard）。<a href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html">官网链接</a></p>
+</blockquote>
+<p>导航守卫用于控制路由的导航，允许你在路由切换之前执行一些操作，如身份验证、权限检查、数据加载等。<code>beforeEach()</code> 是其中之一，它会在每次路由切换之前执行。</p>
+<p>具体来说，<code>beforeEach()</code> 用于在用户试图导航到某个路由前执行一些逻辑。你可以定义这个守卫来检查用户的身份是否有效，验证权限，或执行其他预导航的操作。如果 <code>beforeEach()</code> 中的逻辑返回 <code>false</code>，则导航将被中止，用户将不会切换到新的路由。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;./router&#x27;</span></span><br><span class="line"></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 在路由导航前执行一些操作</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 检查用户是否已登录</span></span><br><span class="line">  <span class="keyword">if</span> (to.<span class="property">meta</span>.<span class="property">requiresAuth</span> &amp;&amp; !<span class="title function_">userIsLoggedIn</span>()) &#123;</span><br><span class="line">    <span class="comment">// 如果需要身份验证且用户未登录，重定向到登录页面</span></span><br><span class="line">    <span class="title function_">next</span>(<span class="string">&#x27;/login&#x27;</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 如果不需要身份验证或用户已登录，允许继续导航</span></span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，<code>beforeEach()</code> 导航守卫用于检查路由是否需要身份验证（<code>to.meta.requiresAuth</code>），以及用户是否已登录（<code>userIsLoggedIn()</code>）。如果需要身份验证且用户未登录，它会重定向用户到登录页面；否则，它会允许用户继续导航。</p>
+<p>总之，<code>beforeEach()</code> 导航守卫是 Vue Router 中的一种强大的工具，用于控制路由导航的行为，实现身份验证、权限管理和其他导航前的逻辑。</p>
+<h4 id="Vue3实际使用"><a href="#Vue3实际使用" class="headerlink" title="Vue3实际使用"></a>Vue3实际使用</h4><p>src&#x2F;router&#x2F;index.vue</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 登录访问拦截 =&gt; 默认放行</span></span><br><span class="line"><span class="comment">// 根据返回值决定，放行还是拦截</span></span><br><span class="line"><span class="comment">//返回值：</span></span><br><span class="line"><span class="comment">// 1. undefined / true 直接放行</span></span><br><span class="line"><span class="comment">// 2. false 拦回 from 的地址页面</span></span><br><span class="line"><span class="comment">// 3. 具体路径 或 路径对象 拦截到对应的地址</span></span><br><span class="line"><span class="comment">//  &#x27;/login&#x27; &#123; name:&#x27;login&#x27; &#125;</span></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> userStore = <span class="title function_">useUserStore</span>()</span><br><span class="line">  <span class="keyword">if</span> (!userStore.<span class="property">token</span> &amp;&amp; to.<span class="property">path</span> !== <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;/login&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Vue3</tag>
+      </tags>
   </entry>
   <entry>
     <title>定义使用Pinia</title>
@@ -91,46 +270,6 @@
       </categories>
       <tags>
         <tag>Vue3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>属性的简洁表示法</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h1><blockquote>
-<p>对象属性的简洁表示法是一种语法糖，允许你更简洁地定义对象属性</p>
-</blockquote>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>当属性名和属性值的变量名相同时，你可以只写变量名，而不需要重复书写属性名和赋值符。</p>
-<h4 id="对象属性："><a href="#对象属性：" class="headerlink" title="对象属性："></a>对象属性：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;Alice&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用简洁表示法创建对象</span></span><br><span class="line"><span class="keyword">const</span> person = &#123; name, age &#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="方法定义："><a href="#方法定义：" class="headerlink" title="方法定义："></a>方法定义：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> greeting = &#123;</span><br><span class="line">  <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">greeting.<span class="title function_">sayHello</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算大小周时间</title>
-    <url>/Merhecc/2023/10/13/%E8%AE%A1%E7%AE%97%E5%A4%A7%E5%B0%8F%E5%91%A8%E6%97%B6%E9%97%B4/</url>
-    <content><![CDATA[<h1 id="计算大小周时间"><a href="#计算大小周时间" class="headerlink" title="计算大小周时间"></a>计算大小周时间</h1><blockquote>
-<p>能够随时查看不同人的大小周</p>
-</blockquote>
-<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><p>输入内容：入职时间，入职当周为大周 or 小周</p>
-<p>结果反馈：本周为大周 or 小周</p>
-<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>需要计算当前时间和入职时间差，并且考虑</p>
-<ul>
-<li>平闰年 - 2月：平年28天，闰年29天</li>
-<li>1，3，5，7，8，10，12 有31天，其余（除开2月）为30天</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>工具需求</tag>
       </tags>
   </entry>
   <entry>
@@ -191,6 +330,25 @@
       </tags>
   </entry>
   <entry>
+    <title>属性的简洁表示法</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h1><blockquote>
+<p>对象属性的简洁表示法是一种语法糖，允许你更简洁地定义对象属性</p>
+</blockquote>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>当属性名和属性值的变量名相同时，你可以只写变量名，而不需要重复书写属性名和赋值符。</p>
+<h4 id="对象属性："><a href="#对象属性：" class="headerlink" title="对象属性："></a>对象属性：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;Alice&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用简洁表示法创建对象</span></span><br><span class="line"><span class="keyword">const</span> person = &#123; name, age &#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="方法定义："><a href="#方法定义：" class="headerlink" title="方法定义："></a>方法定义：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> greeting = &#123;</span><br><span class="line">  <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">greeting.<span class="title function_">sayHello</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Object.is()方法</title>
     <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a>Object.is()</h1><blockquote>
@@ -210,62 +368,6 @@
 <h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;hello&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="string">&quot;5&quot;</span>)); <span class="comment">// false，不同类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(+<span class="number">0</span>, -<span class="number">0</span>)); <span class="comment">// false，区分 +0 和 -0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="title class_">NaN</span>, <span class="title class_">NaN</span>)); <span class="comment">// true，区分 NaN</span></span><br></pre></td></tr></table></figure>
 
 <p><code>Object.is()</code> 的主要优点是它能够正确处理一些特殊情况，例如区分正零和负零，以及区分不同的 <code>NaN</code> 值。它在某些情况下更精确，但在其他情况下可能与 <code>===</code> 行为相同。通常情况下，你可以使用 <code>Object.is()</code> 来进行更严格的值比较，尤其是需要考虑特殊值的情况。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Object.assign()方法</title>
-    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/05%E3%80%81Object.assign()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="Object-assign"><a href="#Object-assign" class="headerlink" title="Object.assign()"></a>Object.assign()</h1><blockquote>
-<p><code>Object.assign()</code> 是 JavaScript 中的一个静态方法，用于将一个或多个源对象的属性复制到目标对象中。这是一种对象合并的方法，它会<strong>修改目标对象</strong>，并<strong>返回目标对象</strong>。如果目标对象中已存在相同属性名的属性，则这些属性的值将被<strong>覆盖</strong>。</p>
-</blockquote>
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source1, source2, ...sourceN)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>target</code>：目标对象，要将属性复制到该对象中。</li>
-<li><code>source1, source2, ...sourceN</code>：一个或多个源对象，从这些对象中复制属性。</li>
-</ul>
-<p><code>Object.assign()</code> 将源对象的属性复制到目标对象中，并返回修改后的目标对象。如果目标对象没有传入，它会返回一个空对象。</p>
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> target = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">b</span>: <span class="number">3</span>, <span class="attr">c</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并 source 到 target</span></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: 1, b: 3, c: 4 &#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>需要注意的是，<code>Object.assign()</code> 是<strong>浅复制</strong>，它只复制属性的值，而不会复制属性值中的对象的引用。如果属性值是对象，它们仍然会引用相同的对象，而不会进行深度复制。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj1 = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: <span class="number">1</span> &#125; &#125;;</span><br><span class="line"><span class="keyword">const</span> obj2 = &#123; <span class="attr">a</span>: &#123; <span class="attr">c</span>: <span class="number">2</span> &#125; &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj1, obj2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: &#123; c: 2 &#125; &#125;，obj1.a 被 obj2.a 覆盖，不会深度合并</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>如果需要进行深度复制或深度合并，你需要使用递归或第三方库来实现。</p>
-</blockquote>
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>Object.assign()</code> 方法是一种方便的方式来合并对象的属性，用于创建新的对象或修改现有对象的属性。</p>
-<h4 id="为对象添加属性"><a href="#为对象添加属性" class="headerlink" title="为对象添加属性"></a>为对象添加属性</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">assign</span>(<span class="variable language_">this</span>, &#123; x, y &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 相当于</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">x</span> = x;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">y</span> = y;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的方法通过 assign 方法将 x 属性和 y 属性添加到了 Point 类的对象实例中</p>
-<h4 id="为对象添加方法"><a href="#为对象添加方法" class="headerlink" title="为对象添加方法"></a>为对象添加方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 定义一个源对象，它包含一个方法 greet</span></span><br><span class="line"><span class="keyword">const</span> source = &#123;</span><br><span class="line">  <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个目标对象</span></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 Object.assign 将源对象的方法复制到目标对象</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用目标对象的方法</span></span><br><span class="line">target.<span class="title function_">greet</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>需要注意的是，<code>Object.assign()</code> 仅复制方法的引用，而不是创建方法的新副本。这意味着在目标对象上调用方法时，它实际上执行的是源对象上的<strong>同一个方法</strong>。如果你在目标对象上修改方法，也会<strong>影响源对象</strong>中的方法，因为它们引用的是相同的函数。</p>
-</blockquote>
-<h4 id="克隆对象"><a href="#克隆对象" class="headerlink" title="克隆对象"></a>克隆对象</h4><p><code>Object.assign()</code> 可以用于克隆对象，也就是创建一个与源对象具有相同属性和属性值的新对象。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 修改克隆对象不会影响源对象</span></span><br><span class="line">clone.<span class="property">name</span> = <span class="string">&quot;Bob&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Bob&quot;, age: 30 &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(source); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这种方式是一种<strong>浅克隆</strong>，如果源对象的属性值是对象，那么克隆对象仍然会引用相同的对象，因此它们是浅层复制。</p>
-<blockquote>
-<p>复制方法，做修改会修改源方法，而复制对象，做修改不会修改源对象 (对象内对象为引用)</p>
-</blockquote>
-<h4 id="合并多个对象"><a href="#合并多个对象" class="headerlink" title="合并多个对象"></a>合并多个对象</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并为新对象的方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, ...sources);</span><br></pre></td></tr></table></figure>
-
-<p>使用示例</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"><span class="keyword">const</span> source1 = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source2 = &#123; <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source3 = &#123; <span class="attr">city</span>: <span class="string">&quot;New York&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 merge 函数合并多个对象的属性到目标对象</span></span><br><span class="line"><span class="title function_">merge</span>(target, source1, source2, source3);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(target); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30, city: &quot;New York&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这个函数非常实用，因为它可以在合并对象时减少代码的重复性，而且它使得合并多个对象的操作更加清晰和简洁。如果你需要频繁进行对象属性合并操作，这个函数会很有帮助。</p>
-<h4 id="为属性指定默认值"><a href="#为属性指定默认值" class="headerlink" title="为属性指定默认值"></a>为属性指定默认值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> defaults = &#123;</span><br><span class="line">    <span class="attr">logLevel</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">outputFormat</span>: <span class="string">&#x27;html&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">processContent</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    options = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, defaults, options);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(options);</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果传入的选项中没有某些属性，它们将从默认选项中继承，从而提供了默认值。</p>
-<p>这是一种常见的模式，用于在函数中处理选项，确保传入选项对象中缺失的属性具有默认值。这使得函数更加灵活，用户可以根据需要选择是否提供特定选项，而不必为每个选项都提供一个值。</p>
-<p>示例中的代码在处理选项时非常实用，特别是在库或框架中，用于为函数提供配置选项时。</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -320,26 +422,6 @@
 <p>在这个示例中，我们将属性 a 设置为不可枚举，因此在 for…in 循环中不会显示。属性 b 仍然是可枚举的。</p>
 <h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>属性的可枚举性是一个很有用的特性，它允许你在需要时控制对象属性的可见性。你可以使用 <code>Object.keys()</code>、<code>Object.values()</code>、<code>Object.entries()</code> 等方法来获取对象的可枚举属性。这对于隐藏内部属性或控制属性的可访问性非常有用。</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript中的Apply()方法</title>
-    <url>/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
-<p><strong>2、apply将数组转换为参数</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>技术</category>
       </categories>
@@ -415,6 +497,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Object.assign()方法</title>
+    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/05%E3%80%81Object.assign()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Object-assign"><a href="#Object-assign" class="headerlink" title="Object.assign()"></a>Object.assign()</h1><blockquote>
+<p><code>Object.assign()</code> 是 JavaScript 中的一个静态方法，用于将一个或多个源对象的属性复制到目标对象中。这是一种对象合并的方法，它会<strong>修改目标对象</strong>，并<strong>返回目标对象</strong>。如果目标对象中已存在相同属性名的属性，则这些属性的值将被<strong>覆盖</strong>。</p>
+</blockquote>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source1, source2, ...sourceN)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>target</code>：目标对象，要将属性复制到该对象中。</li>
+<li><code>source1, source2, ...sourceN</code>：一个或多个源对象，从这些对象中复制属性。</li>
+</ul>
+<p><code>Object.assign()</code> 将源对象的属性复制到目标对象中，并返回修改后的目标对象。如果目标对象没有传入，它会返回一个空对象。</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> target = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">b</span>: <span class="number">3</span>, <span class="attr">c</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并 source 到 target</span></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: 1, b: 3, c: 4 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>需要注意的是，<code>Object.assign()</code> 是<strong>浅复制</strong>，它只复制属性的值，而不会复制属性值中的对象的引用。如果属性值是对象，它们仍然会引用相同的对象，而不会进行深度复制。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj1 = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: <span class="number">1</span> &#125; &#125;;</span><br><span class="line"><span class="keyword">const</span> obj2 = &#123; <span class="attr">a</span>: &#123; <span class="attr">c</span>: <span class="number">2</span> &#125; &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj1, obj2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: &#123; c: 2 &#125; &#125;，obj1.a 被 obj2.a 覆盖，不会深度合并</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果需要进行深度复制或深度合并，你需要使用递归或第三方库来实现。</p>
+</blockquote>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>Object.assign()</code> 方法是一种方便的方式来合并对象的属性，用于创建新的对象或修改现有对象的属性。</p>
+<h4 id="为对象添加属性"><a href="#为对象添加属性" class="headerlink" title="为对象添加属性"></a>为对象添加属性</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">assign</span>(<span class="variable language_">this</span>, &#123; x, y &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 相当于</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">x</span> = x;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">y</span> = y;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的方法通过 assign 方法将 x 属性和 y 属性添加到了 Point 类的对象实例中</p>
+<h4 id="为对象添加方法"><a href="#为对象添加方法" class="headerlink" title="为对象添加方法"></a>为对象添加方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 定义一个源对象，它包含一个方法 greet</span></span><br><span class="line"><span class="keyword">const</span> source = &#123;</span><br><span class="line">  <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个目标对象</span></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 Object.assign 将源对象的方法复制到目标对象</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用目标对象的方法</span></span><br><span class="line">target.<span class="title function_">greet</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>需要注意的是，<code>Object.assign()</code> 仅复制方法的引用，而不是创建方法的新副本。这意味着在目标对象上调用方法时，它实际上执行的是源对象上的<strong>同一个方法</strong>。如果你在目标对象上修改方法，也会<strong>影响源对象</strong>中的方法，因为它们引用的是相同的函数。</p>
+</blockquote>
+<h4 id="克隆对象"><a href="#克隆对象" class="headerlink" title="克隆对象"></a>克隆对象</h4><p><code>Object.assign()</code> 可以用于克隆对象，也就是创建一个与源对象具有相同属性和属性值的新对象。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 修改克隆对象不会影响源对象</span></span><br><span class="line">clone.<span class="property">name</span> = <span class="string">&quot;Bob&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Bob&quot;, age: 30 &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(source); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这种方式是一种<strong>浅克隆</strong>，如果源对象的属性值是对象，那么克隆对象仍然会引用相同的对象，因此它们是浅层复制。</p>
+<blockquote>
+<p>复制方法，做修改会修改源方法，而复制对象，做修改不会修改源对象 (对象内对象为引用)</p>
+</blockquote>
+<h4 id="合并多个对象"><a href="#合并多个对象" class="headerlink" title="合并多个对象"></a>合并多个对象</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并为新对象的方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, ...sources);</span><br></pre></td></tr></table></figure>
+
+<p>使用示例</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"><span class="keyword">const</span> source1 = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source2 = &#123; <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source3 = &#123; <span class="attr">city</span>: <span class="string">&quot;New York&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 merge 函数合并多个对象的属性到目标对象</span></span><br><span class="line"><span class="title function_">merge</span>(target, source1, source2, source3);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(target); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30, city: &quot;New York&quot; &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个函数非常实用，因为它可以在合并对象时减少代码的重复性，而且它使得合并多个对象的操作更加清晰和简洁。如果你需要频繁进行对象属性合并操作，这个函数会很有帮助。</p>
+<h4 id="为属性指定默认值"><a href="#为属性指定默认值" class="headerlink" title="为属性指定默认值"></a>为属性指定默认值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> defaults = &#123;</span><br><span class="line">    <span class="attr">logLevel</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">outputFormat</span>: <span class="string">&#x27;html&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">processContent</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    options = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, defaults, options);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(options);</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果传入的选项中没有某些属性，它们将从默认选项中继承，从而提供了默认值。</p>
+<p>这是一种常见的模式，用于在函数中处理选项，确保传入选项对象中缺失的属性具有默认值。这使得函数更加灵活，用户可以根据需要选择是否提供特定选项，而不必为每个选项都提供一个值。</p>
+<p>示例中的代码在处理选项时非常实用，特别是在库或框架中，用于为函数提供配置选项时。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Array.from()方法</title>
     <url>/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="Array-from-方法"><a href="#Array-from-方法" class="headerlink" title="Array.from()方法"></a>Array.from()方法</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>将 类数组对象（array-like object）和 可遍历对象（iterable object）转换为真数组</p>
@@ -447,6 +585,42 @@
       </tags>
   </entry>
   <entry>
+    <title>JavaScript中的Apply()方法</title>
+    <url>/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
+<p><strong>2、apply将数组转换为参数</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据类型检测</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
+    <content><![CDATA[<ol>
+<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
+<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
+<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>增强对象属性</title>
     <url>/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/</url>
     <content><![CDATA[<p><strong>数组结构：</strong></p>
@@ -464,22 +638,6 @@
 
 
 
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据类型检测</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
-    <content><![CDATA[<ol>
-<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
-<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
-<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
-</ol>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -613,113 +771,5 @@
       <tags>
         <tag>JavaScript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>登录系统流程</title>
-    <url>/Merhecc/2023/10/18/%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="登录系统流程"><a href="#登录系统流程" class="headerlink" title="登录系统流程"></a>登录系统流程</h1><ul>
-<li>页面登录按钮触发异步方法</li>
-<li>异步方法内进行校验，校验通过，携带账号密码传入api模块方法</li>
-<li>api模块方法：发起get或post请求</li>
-<li>axios模块拦截请求，验证token存在？在响应拦截器里获取token，同时跳转页面</li>
-<li>pinia对token进行持久化</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>导航守卫</title>
-    <url>/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/</url>
-    <content><![CDATA[<h3 id="beforeEach"><a href="#beforeEach" class="headerlink" title="beforeEach()"></a>beforeEach()</h3><blockquote>
-<p>beforeEach() 是 Vue Router 中的一个导航守卫（Navigation Guard）。<a href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html">官网链接</a></p>
-</blockquote>
-<p>导航守卫用于控制路由的导航，允许你在路由切换之前执行一些操作，如身份验证、权限检查、数据加载等。<code>beforeEach()</code> 是其中之一，它会在每次路由切换之前执行。</p>
-<p>具体来说，<code>beforeEach()</code> 用于在用户试图导航到某个路由前执行一些逻辑。你可以定义这个守卫来检查用户的身份是否有效，验证权限，或执行其他预导航的操作。如果 <code>beforeEach()</code> 中的逻辑返回 <code>false</code>，则导航将被中止，用户将不会切换到新的路由。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;./router&#x27;</span></span><br><span class="line"></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 在路由导航前执行一些操作</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 检查用户是否已登录</span></span><br><span class="line">  <span class="keyword">if</span> (to.<span class="property">meta</span>.<span class="property">requiresAuth</span> &amp;&amp; !<span class="title function_">userIsLoggedIn</span>()) &#123;</span><br><span class="line">    <span class="comment">// 如果需要身份验证且用户未登录，重定向到登录页面</span></span><br><span class="line">    <span class="title function_">next</span>(<span class="string">&#x27;/login&#x27;</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 如果不需要身份验证或用户已登录，允许继续导航</span></span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>在这个示例中，<code>beforeEach()</code> 导航守卫用于检查路由是否需要身份验证（<code>to.meta.requiresAuth</code>），以及用户是否已登录（<code>userIsLoggedIn()</code>）。如果需要身份验证且用户未登录，它会重定向用户到登录页面；否则，它会允许用户继续导航。</p>
-<p>总之，<code>beforeEach()</code> 导航守卫是 Vue Router 中的一种强大的工具，用于控制路由导航的行为，实现身份验证、权限管理和其他导航前的逻辑。</p>
-<h4 id="Vue3实际使用"><a href="#Vue3实际使用" class="headerlink" title="Vue3实际使用"></a>Vue3实际使用</h4><p>src&#x2F;router&#x2F;index.vue</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 登录访问拦截 =&gt; 默认放行</span></span><br><span class="line"><span class="comment">// 根据返回值决定，放行还是拦截</span></span><br><span class="line"><span class="comment">//返回值：</span></span><br><span class="line"><span class="comment">// 1. undefined / true 直接放行</span></span><br><span class="line"><span class="comment">// 2. false 拦回 from 的地址页面</span></span><br><span class="line"><span class="comment">// 3. 具体路径 或 路径对象 拦截到对应的地址</span></span><br><span class="line"><span class="comment">//  &#x27;/login&#x27; &#123; name:&#x27;login&#x27; &#125;</span></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> userStore = <span class="title function_">useUserStore</span>()</span><br><span class="line">  <span class="keyword">if</span> (!userStore.<span class="property">token</span> &amp;&amp; to.<span class="property">path</span> !== <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;/login&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Vue3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/Merhecc/2023/10/24/Ajax/</url>
-    <content><![CDATA[<h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><h2 id="什么是-AJAX？"><a href="#什么是-AJAX？" class="headerlink" title="什么是 AJAX？"></a>什么是 AJAX？</h2><blockquote>
-<p>AJAX &#x3D; <em>A</em>synchronous <em>J</em>avaScript <em>A</em>nd <em>X</em>ML.</p>
-</blockquote>
-<p>AJAX 并非编程语言。AJAX 仅仅组合了：</p>
-<ul>
-<li>浏览器内建的 XMLHttpRequest 对象（从 web 服务器请求数据）</li>
-<li>JavaScript 和 HTML DOM（显示或使用数据）</li>
-</ul>
-<p>Ajax 是一个令人误导的名称。Ajax 应用程序可能使用 XML 来传输数据，但将数据作为纯文本或 JSON 文本传输也同样常见。</p>
-<p>Ajax 允许通过与场景后面的 Web 服务器交换数据来异步更新网页。这意味着可以更新网页的部分，而不需要重新加载整个页面。</p>
-<p><img src="https://www.w3school.com.cn/i/ajax.gif" alt="Ajax工作示意图"></p>
-<ol>
-<li><p>网页中发生一个事件（页面加载、按钮点击）</p>
-</li>
-<li><p>由 JavaScript 创建 XMLHttpRequest 对象</p>
-</li>
-<li><p>XMLHttpRequest 对象向 web 服务器发送请求</p>
-</li>
-<li><p>服务器处理该请求</p>
-</li>
-<li><p>服务器将响应发送回网页</p>
-</li>
-<li><p>由 JavaScript 读取响应</p>
-</li>
-<li><p>由 JavaScript 执行正确的动作（比如更新页面）</p>
-</li>
-</ol>
-<p><a href="https://www.w3school.com.cn/js/js_ajax_intro.asp">来源于W3school</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/Merhecc/2023/10/24/Mockjs/</url>
-    <content><![CDATA[<h1 id="Vue3-Mockjs使用详解"><a href="#Vue3-Mockjs使用详解" class="headerlink" title="Vue3 Mockjs使用详解"></a>Vue3 Mockjs使用详解</h1><blockquote>
-<p>Mockjs是一种模拟数据的工具</p>
-</blockquote>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install mockjs --save-dev</span><br></pre></td></tr></table></figure>
-
-<h3 id="演示登录模拟数据-使用步骤"><a href="#演示登录模拟数据-使用步骤" class="headerlink" title="演示登录模拟数据 - 使用步骤"></a>演示登录模拟数据 - 使用步骤</h3><h2 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h2><p>在main.js中导入mock文件，并创建src&#x2F;mock&#x2F;index.js</p>
-<blockquote>
-<p>src&#x2F;main.js</p>
-</blockquote>
-<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./mock/index.js&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>src&#x2F;mock&#x2F;index.js</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Mock</span> <span class="keyword">from</span> <span class="string">&#x27;mockjs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Mock</span>.<span class="title function_">mock</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="string">&#x27;post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">msg</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="attr">content</span>: &#123;</span><br><span class="line">    <span class="attr">token</span>:</span><br><span class="line">      <span class="string">&#x27;123123123123&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>Mock.mock(‘&#x2F;api&#x2F;login’, ‘post’, {…})&#96;：这是 Mock.js 提供的用于模拟HTTP请求和响应的方法。</p>
-<ul>
-<li><code>&#39;/api/login&#39;</code>：指定了模拟请求的URL路径，这意味着当你的前端应用发送 POST 请求到 <code>/api/login</code> 路径时，Mock.js 将捕获该请求并返回下面指定的响应数据。</li>
-<li><code>&#39;post&#39;</code>：指定了HTTP请求方法，这里是 POST。这意味着模拟的响应将仅对 POST 请求有效。</li>
-<li><code>&#123;...&#125;</code>：这个对象包含了模拟的响应数据，其中包括：<ul>
-<li><code>code: 0</code>：模拟的响应中的状态码，通常 <code>0</code> 表示成功。</li>
-<li><code>msg: &#39;success&#39;</code>：模拟的响应消息，通常用于描述请求结果。</li>
-<li><code>content: &#123;...&#125;</code>：模拟的响应内容。在这个示例中，<code>content</code> 包含一个名为 <code>token</code> 的字段，其值为 <code>&#39;123123123123&#39;</code>。</li>
-</ul>
-</li>
-</ul>
-<p><strong>总结：</strong>当你的前端应用发送一个 POST 请求到 <code>/api/login</code> 时，Mock.js 将拦截该请求，并返回模拟的响应数据，其中包括状态码、消息和一个包含令牌的内容字段。</p>
-<h2 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h2><p>在封装的 axios 模块内，将 baseURL 改为 baseURL &#x3D; ‘‘ ， 对于vue3来说目录一般是 src&#x2F;utils&#x2F;request.js。</p>
-<p>这样做的目的是让 mockjs 能够稳定成功拦截到请求</p>
-<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>保证 mock&#x2F;index.js 的请求位置和请求模块中的请求位置相同，对于vue3来说目录一般是 src&#x2F;api&#x2F;xxxx.js。</p>
-<h3 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h3><p>对于登录模拟，成功过了数据验证，但是无法跳转</p>
-<blockquote>
-<p>一般是路由模块的导航守卫设置了无法离开登录页，注释掉它</p>
-</blockquote>
-]]></content>
   </entry>
 </search>

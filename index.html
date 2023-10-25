@@ -200,6 +200,113 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/" class="post-title-link" itemprop="url">Cookie、Session、Token、JWT</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-25 18:20:34 / 修改时间：18:21:57" itemprop="dateCreated datePublished" datetime="2023-10-25T18:20:34+08:00">2023-10-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Cookie、Session、Token、JWT"><a href="#Cookie、Session、Token、JWT" class="headerlink" title="Cookie、Session、Token、JWT"></a>Cookie、Session、Token、JWT</h1><ol>
+<li><strong>Cookie（HTTP Cookie）</strong>:<ul>
+<li><strong>定义</strong>：Cookie是一种小型文本文件，存储在用户的计算机上，由服务器通过HTTP协议发送到用户的浏览器。它通常包含了一些用户状态信息，例如登录凭证、会话标识、用户首选项等。</li>
+<li><strong>工作原理</strong>：服务器在HTTP响应头中设置Cookie，浏览器接收并存储Cookie。每次浏览器向服务器发送请求时，它会自动附上与特定域名相关的Cookie数据。</li>
+<li><strong>用途</strong>：主要用于跟踪用户的状态，例如保持用户登录状态、存储购物车内容等。</li>
+</ul>
+</li>
+<li><strong>Session</strong>:<ul>
+<li><strong>定义</strong>：Session是一种服务器端存储用户数据的方式，与Cookie结合使用，用于跟踪用户的会话状态。通常，服务器为每个会话创建一个唯一的会话ID，并将相关数据存储在服务器上。</li>
+<li><strong>工作原理</strong>：当用户访问应用时，服务器会生成一个唯一的会话ID，并将其存储在Cookie中。服务器使用该ID来识别用户，并在服务器端存储会话数据。</li>
+<li><strong>用途</strong>：用于保持用户的登录状态、存储用户特定数据（如购物车内容），在用户会话期间保持数据一致性。</li>
+</ul>
+</li>
+<li><strong>Token</strong>:<ul>
+<li><strong>定义</strong>：Token是一种用于身份验证和授权的令牌，通常是一串字符，由服务器颁发给客户端，客户端随后将其用于向服务器请求资源。常见的类型包括访问令牌、刷新令牌等。</li>
+<li><strong>工作原理</strong>：用户在登录后，服务器颁发一个令牌给客户端。客户端随后将这个令牌包含在每个请求中，以便服务器可以验证用户身份和授权访问。</li>
+<li><strong>用途</strong>：用于实现无状态身份验证和授权，常用于API访问和单点登录系统。</li>
+</ul>
+</li>
+<li><strong>JWT（JSON Web Token）</strong>:<ul>
+<li><strong>定义</strong>：JWT是一种开放标准（RFC 7519），定义了一种用于在网络间传递声明的令牌格式。它使用JSON对象来传递信息，并签名以确保信息的完整性和可信度。</li>
+<li><strong>工作原理</strong>：JWT包括头部、负载和签名部分。头部描述了令牌类型和签名算法，负载包含声明（例如用户ID、角色等），签名用于验证令牌的真实性。</li>
+<li><strong>用途</strong>：JWT通常用于在不同服务之间安全传递用户身份信息，常见于单点登录、OAuth授权等场景。</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/24/Mockjs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -214,7 +321,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Merhecc/2023/10/24/Mockjs/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/Merhecc/2023/10/24/Mockjs/" class="post-title-link" itemprop="url">Mockjs</a>
         </h2>
 
         <div class="post-meta">
@@ -225,7 +332,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-10-24 10:14:32 / 修改时间：10:44:04" itemprop="dateCreated datePublished" datetime="2023-10-24T10:14:32+08:00">2023-10-24</time>
+              <time title="创建时间：2023-10-24 10:14:32 / 修改时间：10:49:20" itemprop="dateCreated datePublished" datetime="2023-10-24T10:14:32+08:00">2023-10-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
             </span>
 
           
@@ -269,6 +385,7 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Mock</span> <span class="keyword">from</span> <span class="string">&#x27;mockjs&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Mock</span>.<span class="title function_">mock</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="string">&#x27;post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">0</span>,</span><br><span class="line">  <span class="attr">msg</span>: <span class="string">&#x27;success&#x27;</span>,</span><br><span class="line">  <span class="attr">content</span>: &#123;</span><br><span class="line">    <span class="attr">token</span>:</span><br><span class="line">      <span class="string">&#x27;123123123123&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
+<p><strong>上述代码解释：</strong></p>
 <p>Mock.mock(‘&#x2F;api&#x2F;login’, ‘post’, {…})&#96;：这是 Mock.js 提供的用于模拟HTTP请求和响应的方法。</p>
 <ul>
 <li><code>&#39;/api/login&#39;</code>：指定了模拟请求的URL路径，这意味着当你的前端应用发送 POST 请求到 <code>/api/login</code> 路径时，Mock.js 将捕获该请求并返回下面指定的响应数据。</li>
@@ -321,7 +438,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Merhecc/2023/10/24/Ajax/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/Merhecc/2023/10/24/Ajax/" class="post-title-link" itemprop="url">Ajax</a>
         </h2>
 
         <div class="post-meta">
@@ -332,7 +449,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-10-24 09:47:31 / 修改时间：10:14:34" itemprop="dateCreated datePublished" datetime="2023-10-24T09:47:31+08:00">2023-10-24</time>
+              <time title="创建时间：2023-10-24 09:47:31 / 修改时间：10:47:33" itemprop="dateCreated datePublished" datetime="2023-10-24T09:47:31+08:00">2023-10-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
             </span>
 
           
@@ -1090,104 +1216,6 @@
 <p>如果传入的选项中没有某些属性，它们将从默认选项中继承，从而提供了默认值。</p>
 <p>这是一种常见的模式，用于在函数中处理选项，确保传入选项对象中缺失的属性具有默认值。这使得函数更加灵活，用户可以根据需要选择是否提供特定选项，而不必为每个选项都提供一个值。</p>
 <p>示例中的代码在处理选项时非常实用，特别是在库或框架中，用于为函数提供配置选项时。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/Merhecc/images/head.jpg">
-      <meta itemprop="name" content="Merhe">
-      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Merhe's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Object.is()方法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-10-13 10:18:20 / 修改时间：10:28:02" itemprop="dateCreated datePublished" datetime="2023-10-13T10:18:20+08:00">2023-10-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a>Object.is()</h1><blockquote>
-<p>为了解决ES5只用两个运算符（ &#x3D;&#x3D; ）、（ &#x3D;&#x3D;&#x3D; ）</p>
-<blockquote>
-<p>（ &#x3D;&#x3D; ）运算时会自动转换类型</p>
-<p>（ &#x3D;&#x3D;&#x3D; ）运算 NaN 时不等于自身，+0 等于 -0</p>
-</blockquote>
-</blockquote>
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">is</span>(value1, value2)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>value1</code>：第一个要比较的值。</li>
-<li><code>value2</code>：第二个要比较的值。</li>
-</ul>
-<p><code>Object.is()</code> 返回一个布尔值，表示两个值是否严格相等。如果相等，则返回 <code>true</code>；如果不相等，则返回 <code>false</code>。</p>
-<h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;hello&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="string">&quot;5&quot;</span>)); <span class="comment">// false，不同类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(+<span class="number">0</span>, -<span class="number">0</span>)); <span class="comment">// false，区分 +0 和 -0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="title class_">NaN</span>, <span class="title class_">NaN</span>)); <span class="comment">// true，区分 NaN</span></span><br></pre></td></tr></table></figure>
-
-<p><code>Object.is()</code> 的主要优点是它能够正确处理一些特殊情况，例如区分正零和负零，以及区分不同的 <code>NaN</code> 值。它在某些情况下更精确，但在其他情况下可能与 <code>===</code> 行为相同。通常情况下，你可以使用 <code>Object.is()</code> 来进行更严格的值比较，尤其是需要考虑特殊值的情况。</p>
 
       
     </div>
