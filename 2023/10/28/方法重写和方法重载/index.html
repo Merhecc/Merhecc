@@ -22,18 +22,20 @@
     var CONFIG = {"hostname":"merhecc.github.io","root":"/Merhecc/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="只要行动起来，一切都不算太晚。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Merhe&#39;s Blog">
-<meta property="og:url" content="https://merhecc.github.io/Merhecc/categories/%E6%8A%80%E6%9C%AF/page/3/index.html">
+  <meta name="description" content="方法重写和方法重载 相当基础的点，却仍然很多人分不清，同时也容易在 Java 面试中问到  方法重写（Method Overriding）： 方法重写是指子类继承父类的方法，然后在子类中重新定义该方法，以改变方法的行为。  123456789101112class Animal &amp;#123;    void makeSound() &amp;#123;        System.out.println(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="方法重写和方法重载">
+<meta property="og:url" content="https://merhecc.github.io/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/index.html">
 <meta property="og:site_name" content="Merhe&#39;s Blog">
-<meta property="og:description" content="只要行动起来，一切都不算太晚。">
+<meta property="og:description" content="方法重写和方法重载 相当基础的点，却仍然很多人分不清，同时也容易在 Java 面试中问到  方法重写（Method Overriding）： 方法重写是指子类继承父类的方法，然后在子类中重新定义该方法，以改变方法的行为。  123456789101112class Animal &amp;#123;    void makeSound() &amp;#123;        System.out.println(">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-28T02:15:06.000Z">
+<meta property="article:modified_time" content="2023-10-28T03:09:46.192Z">
 <meta property="article:author" content="Merhe">
-<meta property="article:tag" content="日志, 编程, 学习">
+<meta property="article:tag" content="多态">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://merhecc.github.io/Merhecc/categories/%E6%8A%80%E6%9C%AF/page/3/">
+<link rel="canonical" href="https://merhecc.github.io/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">
 
 
 <script id="page-configurations">
@@ -41,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: 技术 | Merhe's Blog</title>
+  <title>方法重写和方法重载 | Merhe's Blog</title>
   
 
 
@@ -195,140 +197,134 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          方法重写和方法重载
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-28 10:15:06 / 修改时间：11:09:46" itemprop="dateCreated datePublished" datetime="2023-10-28T10:15:06+08:00">2023-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">技术
-          <small>分类</small>
-        </h2>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
-    </div>
+        <h1 id="方法重写和方法重载"><a href="#方法重写和方法重载" class="headerlink" title="方法重写和方法重载"></a>方法重写和方法重载</h1><blockquote>
+<p>相当基础的点，却仍然很多人分不清，同时也容易在 Java 面试中问到</p>
+</blockquote>
+<h3 id="方法重写（Method-Overriding）："><a href="#方法重写（Method-Overriding）：" class="headerlink" title="方法重写（Method Overriding）："></a>方法重写（Method Overriding）：</h3><ul>
+<li>方法重写是指子类<strong>继承</strong>父类的方法，然后在子类中<strong>重新定义该方法</strong>，以<strong>改变方法的行为</strong>。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span> <span class="comment">// 标记打算重写（覆盖）父类中的方法</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-10-11T10:34:44+08:00"
-              content="2023-10-11">
-          10-11
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/05%E3%80%81%E5%B1%95%E5%BC%80%E8%BF%90%E7%AE%97%E7%AC%A6/" itemprop="url">
-            <span itemprop="name">展开运算符</span>
-          </a>
-      </div>
+<h3 id="方法重载（Method-Overloading）："><a href="#方法重载（Method-Overloading）：" class="headerlink" title="方法重载（Method Overloading）："></a>方法重载（Method Overloading）：</h3><ul>
+<li>方法重载是指在同一个类中定义<strong>多个相同名称的方法</strong>，但它们的<strong>参数不同</strong>（参数类型或参数数量不同）。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MathUtil</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 参数数量不同</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 参数类型不同</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-10-08T11:29:44+08:00"
-              content="2023-10-08">
-          10-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/" itemprop="url">
-            <span itemprop="name">增强对象属性</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-10-08T10:17:54+08:00"
-              content="2023-10-08">
-          10-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/" itemprop="url">
-            <span itemprop="name">JavaScript中的Apply()方法</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-10-01T16:15:06+08:00"
-              content="2023-10-01">
-          10-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/Merhecc/2023/10/01/03/" itemprop="url">
-            <span itemprop="name">LeanCloud</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-10-01T16:15:06+08:00"
-              content="2023-10-01">
-          10-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/Merhecc/2023/10/01/02/" itemprop="url">
-            <span itemprop="name">解决Hexo部署github问题</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/Merhecc/tags/%E5%A4%9A%E6%80%81/" rel="tag"># 多态</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/" rel="prev" title="Cookie、Session、Token、JWT">
+      <i class="fa fa-chevron-left"></i> Cookie、Session、Token、JWT
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Merhecc/2023/10/28/ES6/" rel="next" title="ES6">
+      ES6 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/">1</a><a class="page-number" href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
+  
+  
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -375,6 +371,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD"><span class="nav-number">1.</span> <span class="nav-text">方法重写和方法重载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%EF%BC%88Method-Overriding%EF%BC%89%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">方法重写（Method Overriding）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD%EF%BC%88Method-Overloading%EF%BC%89%EF%BC%9A"><span class="nav-number">1.0.2.</span> <span class="nav-text">方法重载（Method Overloading）：</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

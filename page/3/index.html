@@ -201,6 +201,195 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Array.of()方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-12 09:49:44" itemprop="dateCreated datePublished" datetime="2023-10-12T09:49:44+08:00">2023-10-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-28 11:22:59" itemprop="dateModified" datetime="2023-10-28T11:22:59+08:00">2023-10-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a>Array.of()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
+<p>Array.of 方法用于将一组值转换为数组</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Array</span>.<span class="title function_">of</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="引入原因"><a href="#引入原因" class="headerlink" title="引入原因"></a>引入原因</h3><p>弥补数组构造函数 Array() 的不足：Array() 会因为参数个数不同而返回不同结果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Array</span>() <span class="comment">// []</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>) <span class="comment">// [, , ,]</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="因此，Array-of-替代了-Array-、new-Array"><a href="#因此，Array-of-替代了-Array-、new-Array" class="headerlink" title="因此，Array.of() 替代了 Array() 、new Array()"></a>因此，Array.of() 替代了 Array() 、new Array()</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/Merhecc/images/head.jpg">
+      <meta itemprop="name" content="Merhe">
+      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Merhe's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/" class="post-title-link" itemprop="url">数据类型检测</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-12 09:46:44" itemprop="dateCreated datePublished" datetime="2023-10-12T09:46:44+08:00">2023-10-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-28 11:22:57" itemprop="dateModified" datetime="2023-10-28T11:22:57+08:00">2023-10-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
+<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
+<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/11/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81Array.from()%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -224,17 +413,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-10-11 10:34:44 / 修改时间：18:31:04" itemprop="dateCreated datePublished" datetime="2023-10-11T10:34:44+08:00">2023-10-11</time>
+              <time title="创建时间：2023-10-11 10:34:44" itemprop="dateCreated datePublished" datetime="2023-10-11T10:34:44+08:00">2023-10-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-28 11:22:54" itemprop="dateModified" datetime="2023-10-28T11:22:54+08:00">2023-10-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
                 </span>
             </span>
 
@@ -334,7 +529,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-12 11:10:06" itemprop="dateModified" datetime="2023-10-12T11:10:06+08:00">2023-10-12</time>
+                <time title="修改时间：2023-10-28 11:22:46" itemprop="dateModified" datetime="2023-10-28T11:22:46+08:00">2023-10-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -342,7 +537,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
                 </span>
             </span>
 
@@ -469,9 +664,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-10-10 18:06:53 / 修改时间：18:13:20" itemprop="dateCreated datePublished" datetime="2023-10-10T18:06:53+08:00">2023-10-10</time>
+              <time title="创建时间：2023-10-10 18:06:53" itemprop="dateCreated datePublished" datetime="2023-10-10T18:06:53+08:00">2023-10-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-28 11:19:39" itemprop="dateModified" datetime="2023-10-28T11:19:39+08:00">2023-10-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                </span>
             </span>
 
           
@@ -553,7 +763,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-12 11:09:10" itemprop="dateModified" datetime="2023-10-12T11:09:10+08:00">2023-10-12</time>
+                <time title="修改时间：2023-10-28 11:22:49" itemprop="dateModified" datetime="2023-10-28T11:22:49+08:00">2023-10-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -561,7 +771,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
                 </span>
             </span>
 
@@ -655,7 +865,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-11 14:38:10" itemprop="dateModified" datetime="2023-10-11T14:38:10+08:00">2023-10-11</time>
+                <time title="修改时间：2023-10-28 11:22:43" itemprop="dateModified" datetime="2023-10-28T11:22:43+08:00">2023-10-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -663,7 +873,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/Merhecc/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
                 </span>
             </span>
 
@@ -792,88 +1002,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/01/03/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/Merhecc/images/head.jpg">
-      <meta itemprop="name" content="Merhe">
-      <meta itemprop="description" content="只要行动起来，一切都不算太晚。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Merhe's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Merhecc/2023/10/01/03/" class="post-title-link" itemprop="url">LeanCloud</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-10-01 16:15:06 / 修改时间：21:05:36" itemprop="dateCreated datePublished" datetime="2023-10-01T16:15:06+08:00">2023-10-01</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/Merhecc/2023/10/01/03/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/01/03/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/01/02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -957,7 +1085,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/09/29/01/">
+    <link itemprop="mainEntityOfPage" href="https://merhecc.github.io/Merhecc/2023/10/01/03/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/Merhecc/images/head.jpg">
@@ -971,7 +1099,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Merhecc/2023/09/29/01/" class="post-title-link" itemprop="url">10月新番《香格里拉边境》</a>
+            <a href="/Merhecc/2023/10/01/03/" class="post-title-link" itemprop="url">LeanCloud</a>
         </h2>
 
         <div class="post-meta">
@@ -980,23 +1108,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-09-29 16:15:06" itemprop="dateCreated datePublished" datetime="2023-09-29T16:15:06+08:00">2023-09-29</time>
+              <time title="创建时间：2023-10-01 16:15:06 / 修改时间：21:05:36" itemprop="dateCreated datePublished" datetime="2023-10-01T16:15:06+08:00">2023-10-01</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-27 16:17:15" itemprop="dateModified" datetime="2023-10-27T16:17:15+08:00">2023-10-27</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Merhecc/categories/ACG/" itemprop="url" rel="index"><span itemprop="name">ACG</span></a>
+                  <a href="/Merhecc/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
                 </span>
             </span>
 
@@ -1009,8 +1131,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/Merhecc/2023/09/29/01/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/09/29/01/" itemprop="commentCount"></span>
+    <a title="valine" href="/Merhecc/2023/10/01/03/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Merhecc/2023/10/01/03/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1025,8 +1147,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>话说香格里拉到底是什么啊，国外有香格里拉酒店、饭店，霓虹有动漫，云南有香格里拉市，我们这有香格里拉小区，在网上搜也没个所以然，这动漫男主还是个鸟人。</p>
-<p><img src="https://www.qingdianjing.net/wp-content/uploads/2021/10/20211024_6174abe569b6b.jpg" alt="兔子"><img src="https://images.dmzj.com/resource/news/2023/08/23/1692758621692774.png" alt="鸟人"></p>
+          <p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
 
       
     </div>
@@ -1045,7 +1166,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/Merhecc/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/Merhecc/">1</a><a class="page-number" href="/Merhecc/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/Merhecc/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/Merhecc/">1</a><a class="page-number" href="/Merhecc/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/Merhecc/page/4/">4</a><a class="extend next" rel="next" href="/Merhecc/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 

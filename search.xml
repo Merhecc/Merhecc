@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>10月新番《香格里拉边境》</title>
-    <url>/Merhecc/2023/09/29/01/</url>
-    <content><![CDATA[<p>话说香格里拉到底是什么啊，国外有香格里拉酒店、饭店，霓虹有动漫，云南有香格里拉市，我们这有香格里拉小区，在网上搜也没个所以然，这动漫男主还是个鸟人。</p>
-<p><img src="https://www.qingdianjing.net/wp-content/uploads/2021/10/20211024_6174abe569b6b.jpg" alt="兔子"><img src="https://images.dmzj.com/resource/news/2023/08/23/1692758621692774.png" alt="鸟人"></p>
-]]></content>
-      <categories>
-        <category>ACG</category>
-      </categories>
-      <tags>
-        <tag>anime</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeanCloud</title>
-    <url>/Merhecc/2023/10/01/03/</url>
-    <content><![CDATA[<p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Hexo部署github问题</title>
     <url>/Merhecc/2023/10/01/02/</url>
     <content><![CDATA[<p>首先问题出在部署上面，在config.yml中url设置了github仓库之后，根目录会自动变成github仓库目录，所以会多一层路由，例如merhecc.github.io&#x2F;Merhecc&#x2F;。就会多一层&#x2F;Merhecc&#x2F;。</p>
@@ -39,40 +14,32 @@
       </tags>
   </entry>
   <entry>
-    <title>Cookie、Session、Token、JWT</title>
-    <url>/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/</url>
-    <content><![CDATA[<h1 id="Cookie、Session、Token、JWT"><a href="#Cookie、Session、Token、JWT" class="headerlink" title="Cookie、Session、Token、JWT"></a>Cookie、Session、Token、JWT</h1><ol>
-<li><strong>Cookie（HTTP Cookie）</strong>:<ul>
-<li><strong>定义</strong>：Cookie是一种小型文本文件，存储在用户的计算机上，由服务器通过HTTP协议发送到用户的浏览器。它通常包含了一些用户状态信息，例如登录凭证、会话标识、用户首选项等。</li>
-<li><strong>工作原理</strong>：服务器在HTTP响应头中设置Cookie，浏览器接收并存储Cookie。每次浏览器向服务器发送请求时，它会自动附上与特定域名相关的Cookie数据。</li>
-<li><strong>用途</strong>：主要用于跟踪用户的状态，例如保持用户登录状态、存储购物车内容等。</li>
-</ul>
-</li>
-<li><strong>Session</strong>:<ul>
-<li><strong>定义</strong>：Session是一种服务器端存储用户数据的方式，与Cookie结合使用，用于跟踪用户的会话状态。通常，服务器为每个会话创建一个唯一的会话ID，并将相关数据存储在服务器上。</li>
-<li><strong>工作原理</strong>：当用户访问应用时，服务器会生成一个唯一的会话ID，并将其存储在Cookie中。服务器使用该ID来识别用户，并在服务器端存储会话数据。</li>
-<li><strong>用途</strong>：用于保持用户的登录状态、存储用户特定数据（如购物车内容），在用户会话期间保持数据一致性。</li>
-</ul>
-</li>
-<li><strong>Token</strong>:<ul>
-<li><strong>定义</strong>：Token是一种用于身份验证和授权的令牌，通常是一串字符，由服务器颁发给客户端，客户端随后将其用于向服务器请求资源。常见的类型包括访问令牌、刷新令牌等。</li>
-<li><strong>工作原理</strong>：用户在登录后，服务器颁发一个令牌给客户端。客户端随后将这个令牌包含在每个请求中，以便服务器可以验证用户身份和授权访问。</li>
-<li><strong>用途</strong>：用于实现无状态身份验证和授权，常用于API访问和单点登录系统。</li>
-</ul>
-</li>
-<li><strong>JWT（JSON Web Token）</strong>:<ul>
-<li><strong>定义</strong>：JWT是一种开放标准（RFC 7519），定义了一种用于在网络间传递声明的令牌格式。它使用JSON对象来传递信息，并签名以确保信息的完整性和可信度。</li>
-<li><strong>工作原理</strong>：JWT包括头部、负载和签名部分。头部描述了令牌类型和签名算法，负载包含声明（例如用户ID、角色等），签名用于验证令牌的真实性。</li>
-<li><strong>用途</strong>：JWT通常用于在不同服务之间安全传递用户身份信息，常见于单点登录、OAuth授权等场景。</li>
-</ul>
-</li>
-</ol>
+    <title>10月新番《香格里拉边境》</title>
+    <url>/Merhecc/2023/09/29/01/</url>
+    <content><![CDATA[<p>话说香格里拉到底是什么啊，国外有香格里拉酒店、饭店，霓虹有动漫，云南有香格里拉市，我们这有香格里拉小区，在网上搜也没个所以然，这动漫男主还是个鸟人。</p>
+<p><img src="https://www.qingdianjing.net/wp-content/uploads/2021/10/20211024_6174abe569b6b.jpg" alt="兔子"><img src="https://images.dmzj.com/resource/news/2023/08/23/1692758621692774.png" alt="鸟人"></p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>ACG</category>
       </categories>
       <tags>
-        <tag>Web存储</tag>
+        <tag>anime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ES6</title>
+    <url>/Merhecc/2023/10/28/ES6/</url>
+    <content><![CDATA[<h1 id="ES6-快速回顾"><a href="#ES6-快速回顾" class="headerlink" title="ES6 快速回顾"></a>ES6 快速回顾</h1><blockquote>
+<p>ES6 主要是为了解决 ES5 的先天不足，比如 JavaScript 里并没有类的概念</p>
+</blockquote>
+<p>以下图片来自 <a href="%5Bhttps://www.runoob.com/w3cnote/es6-tutorial.html">菜鸟教程</a> ，能更好的帮助梳理 ES6。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2018/12/es6-tutorial.jpg" alt="来自菜鸟教程"></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -108,7 +75,7 @@
 <p><a href="https://www.w3school.com.cn/js/js_ajax_intro.asp">来源于W3school</a></p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>Ajax</tag>
@@ -155,7 +122,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>mockjs</tag>
@@ -174,6 +141,38 @@
 <li>有一个图形界面可以添加修改命令</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>工具需求</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法重写和方法重载</title>
+    <url>/Merhecc/2023/10/28/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="方法重写和方法重载"><a href="#方法重写和方法重载" class="headerlink" title="方法重写和方法重载"></a>方法重写和方法重载</h1><blockquote>
+<p>相当基础的点，却仍然很多人分不清，同时也容易在 Java 面试中问到</p>
+</blockquote>
+<h3 id="方法重写（Method-Overriding）："><a href="#方法重写（Method-Overriding）：" class="headerlink" title="方法重写（Method Overriding）："></a>方法重写（Method Overriding）：</h3><ul>
+<li>方法重写是指子类<strong>继承</strong>父类的方法，然后在子类中<strong>重新定义该方法</strong>，以<strong>改变方法的行为</strong>。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span> <span class="comment">// 标记打算重写（覆盖）父类中的方法</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="方法重载（Method-Overloading）："><a href="#方法重载（Method-Overloading）：" class="headerlink" title="方法重载（Method Overloading）："></a>方法重载（Method Overloading）：</h3><ul>
+<li>方法重载是指在同一个类中定义<strong>多个相同名称的方法</strong>，但它们的<strong>参数不同</strong>（参数类型或参数数量不同）。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MathUtil</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 参数数量不同</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 参数类型不同</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>多态</tag>
+      </tags>
   </entry>
   <entry>
     <title>登录系统流程</title>
@@ -186,6 +185,9 @@
 <li>pinia对token进行持久化</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
   </entry>
   <entry>
     <title>计算大小周时间</title>
@@ -209,6 +211,55 @@
       </tags>
   </entry>
   <entry>
+    <title>Cookie、Session、Token、JWT</title>
+    <url>/Merhecc/2023/10/25/Cookie%E3%80%81Session%E3%80%81Token%E3%80%81JWT/</url>
+    <content><![CDATA[<h1 id="Cookie、Session、Token、JWT"><a href="#Cookie、Session、Token、JWT" class="headerlink" title="Cookie、Session、Token、JWT"></a>Cookie、Session、Token、JWT</h1><ol>
+<li><strong>Cookie（HTTP Cookie）</strong>:<ul>
+<li><strong>定义</strong>：Cookie是一种小型文本文件，存储在用户的计算机上，由服务器通过HTTP协议发送到用户的浏览器。它通常包含了一些用户状态信息，例如登录凭证、会话标识、用户首选项等。</li>
+<li><strong>工作原理</strong>：服务器在HTTP响应头中设置Cookie，浏览器接收并存储Cookie。每次浏览器向服务器发送请求时，它会自动附上与特定域名相关的Cookie数据。</li>
+<li><strong>用途</strong>：主要用于跟踪用户的状态，例如保持用户登录状态、存储购物车内容等。</li>
+</ul>
+</li>
+<li><strong>Session</strong>:<ul>
+<li><strong>定义</strong>：Session是一种服务器端存储用户数据的方式，与Cookie结合使用，用于跟踪用户的会话状态。通常，服务器为每个会话创建一个唯一的会话ID，并将相关数据存储在服务器上。</li>
+<li><strong>工作原理</strong>：当用户访问应用时，服务器会生成一个唯一的会话ID，并将其存储在Cookie中。服务器使用该ID来识别用户，并在服务器端存储会话数据。</li>
+<li><strong>用途</strong>：用于保持用户的登录状态、存储用户特定数据（如购物车内容），在用户会话期间保持数据一致性。</li>
+</ul>
+</li>
+<li><strong>Token</strong>:<ul>
+<li><strong>定义</strong>：Token是一种用于身份验证和授权的令牌，通常是一串字符，由服务器颁发给客户端，客户端随后将其用于向服务器请求资源。常见的类型包括访问令牌、刷新令牌等。</li>
+<li><strong>工作原理</strong>：用户在登录后，服务器颁发一个令牌给客户端。客户端随后将这个令牌包含在每个请求中，以便服务器可以验证用户身份和授权访问。</li>
+<li><strong>用途</strong>：用于实现无状态身份验证和授权，常用于API访问和单点登录系统。</li>
+</ul>
+</li>
+<li><strong>JWT（JSON Web Token）</strong>:<ul>
+<li><strong>定义</strong>：JWT是一种开放标准（RFC 7519），定义了一种用于在网络间传递声明的令牌格式。它使用JSON对象来传递信息，并签名以确保信息的完整性和可信度。</li>
+<li><strong>工作原理</strong>：JWT包括头部、负载和签名部分。头部描述了令牌类型和签名算法，负载包含声明（例如用户ID、角色等），签名用于验证令牌的真实性。</li>
+<li><strong>用途</strong>：JWT通常用于在不同服务之间安全传递用户身份信息，常见于单点登录、OAuth授权等场景。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Web存储</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeanCloud</title>
+    <url>/Merhecc/2023/10/01/03/</url>
+    <content><![CDATA[<p>LeanCloud（原 AVOS Cloud） 是针对移动应用的一站式云端服务，专注于为应用开发者提供工具和平台。提供包括LeanStorage 数据存储、LeanMessage 通信服务、LeanAnalytics 统计分析、LeanModules 拓展模块等四大类型的后端云服务，加速应用开发。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>导航守卫</title>
     <url>/Merhecc/2023/10/19/Vue3/02%E3%80%81%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/</url>
     <content><![CDATA[<h3 id="beforeEach"><a href="#beforeEach" class="headerlink" title="beforeEach()"></a>beforeEach()</h3><blockquote>
@@ -225,77 +276,185 @@
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>Vue3</tag>
       </tags>
   </entry>
   <entry>
-    <title>定义使用Pinia</title>
-    <url>/Merhecc/2023/10/17/Vue3/Pinia/01%E3%80%81%E5%AE%9A%E4%B9%89%E4%BD%BF%E7%94%A8Pinia/</url>
-    <content><![CDATA[<h1 id="Pinia"><a href="#Pinia" class="headerlink" title="Pinia"></a>Pinia</h1><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote>
-<p>Pinia 是 Vue 的专属状态管理库，它允许你跨组件或页面共享状态。</p>
+    <title>属性的简洁表示法</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h1><blockquote>
+<p>对象属性的简洁表示法是一种语法糖，允许你更简洁地定义对象属性</p>
 </blockquote>
-<p>优点：</p>
-<ol>
-<li><strong>TypeScript 支持</strong>：Pinia 是为 TypeScript 设计的，提供了完整的类型推断和类型安全。这意味着您可以在编译时捕获很多常见的错误，减少运行时错误。</li>
-<li><strong>更好的性能</strong>：Pinia 采用了类似 Vuex 4 的响应式数据结构，并使用 Vue 3 的响应式系统，这使得状态的管理更加高效。同时，Pinia 支持多个根状态，这可以在大型应用中提高性能。</li>
-<li><strong>模块化设计</strong>：Pinia 使用模块化的状态存储，将状态逻辑分割成多个模块，使得应用的状态管理更有组织性和可维护性。</li>
-<li><strong>Composable 函数</strong>：您可以将状态逻辑封装为可复用的 composable 函数，这使得状态逻辑的共享和重用更加容易。</li>
-<li><strong>Devtools 集成</strong>：Pinia 集成了 Vue Devtools，方便开发者调试和监视应用的状态和状态变更。</li>
-<li><strong>异步处理</strong>：Pinia 内置了用于处理异步操作的插件，如 Actions 插件，可以简化异步数据的处理。</li>
-</ol>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 导入：</span></span><br><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useCounterStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;counter&#x27;</span>, <span class="function">() =&gt;</span> &#123;...&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 组件导入：</span></span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br></pre></td></tr></table></figure>
+<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>当属性名和属性值的变量名相同时，你可以只写变量名，而不需要重复书写属性名和赋值符。</p>
+<h4 id="对象属性："><a href="#对象属性：" class="headerlink" title="对象属性："></a>对象属性：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;Alice&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用简洁表示法创建对象</span></span><br><span class="line"><span class="keyword">const</span> person = &#123; name, age &#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
-
-<h4 id="Pinia计数器"><a href="#Pinia计数器" class="headerlink" title="Pinia计数器"></a>Pinia计数器</h4><p>@&#x2F;store&#x2F;counter.js</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; computed, ref &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useCounterStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;counter&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//声明数据 state - count</span></span><br><span class="line">    <span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">666</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明操作数据的方法 action</span></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">addCount</span> = (<span class="params"></span>) =&gt; count.<span class="property">value</span>++</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">subCount</span> = (<span class="params"></span>) =&gt; count.<span class="property">value</span>--</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明基于数据派生的计算属性 getters (computed)</span></span><br><span class="line">    <span class="keyword">const</span> double = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> count.<span class="property">value</span> * <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明数据 state - msg</span></span><br><span class="line">    <span class="keyword">const</span> msg = <span class="title function_">ref</span>(<span class="string">&#x27;hello pinia&#x27;</span>)</span><br><span class="line">	</span><br><span class="line">    <span class="comment">//return 语句返回了一个对象，使它们可以在其他组件中使用。</span></span><br><span class="line">    <span class="keyword">return</span> &#123; </span><br><span class="line">        count,</span><br><span class="line">        msg,</span><br><span class="line">        addCount,</span><br><span class="line">        subCount,</span><br><span class="line">        double</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="comment">//开启当前模块的持久化,</span></span><br><span class="line">    <span class="attr">persist</span>: &#123;</span><br><span class="line">        <span class="attr">key</span>: <span class="string">&#x27;靓仔&#x27;</span>,</span><br><span class="line">        <span class="attr">paths</span>: [<span class="string">&#x27;count&#x27;</span>]</span><br><span class="line">    &#125; </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>在配置对象中，使用 <code>persist</code> 属性配置了模块的持久化选项：</p>
-<ul>
-<li><code>key: &#39;靓仔&#39;</code>：指定了持久化存储的键名，用于存储 <code>count</code> 的值。</li>
-<li><code>paths: [&#39;count&#39;]</code>：指定了要持久化的数据属性，这里只持久化 <code>count</code>。</li>
-</ul>
-<h4 id="Pinia异步获取数据"><a href="#Pinia异步获取数据" class="headerlink" title="Pinia异步获取数据"></a>Pinia异步获取数据</h4><p>@&#x2F;store&#x2F;channel.js</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useChannelStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;channel&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> channelList = <span class="title function_">ref</span>([])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">getList</span> = <span class="keyword">async</span> (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">        <span class="comment">//支持异步</span></span><br><span class="line">        <span class="keyword">const</span> &#123; <span class="attr">data</span>: &#123; data &#125; &#125; = <span class="keyword">await</span> axios.<span class="title function_">get</span>(<span class="string">&#x27;http://geek.itheima.net/v1_0/channels&#x27;</span>)</span><br><span class="line">        channelList.<span class="property">value</span> = data.<span class="property">channels</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(data.<span class="property">channels</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        channelList,</span><br><span class="line">        getList</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="功能页面"><a href="#功能页面" class="headerlink" title="功能页面"></a>功能页面</h4><p>App.vue</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; storeToRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;pinia&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Son1Com</span> <span class="keyword">from</span> <span class="string">&#x27;@/components/Son1Com.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Son2Com</span> <span class="keyword">from</span> <span class="string">&#x27;@/components/Son2Com.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; useChannelStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/channel&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line"><span class="keyword">const</span> channelStore = <span class="title function_">useChannelStore</span>()</span><br><span class="line"><span class="comment">// console.log(counterStore);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123; count, msg &#125; = <span class="title function_">storeToRefs</span>(counterStore)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>根组件 - &#123;&#123; count &#125;&#125; &#123;&#123; msg &#125;&#125; - &#123;&#123; counterStore.double &#125;&#125;<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son1Com</span>&gt;</span><span class="tag">&lt;/<span class="name">Son1Com</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son2Com</span>&gt;</span><span class="tag">&lt;/<span class="name">Son2Com</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;channelStore.getList&quot;</span>&gt;</span>获取频道数据<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in channelStore.channelList&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br></pre></td></tr></table></figure>
-
-
-<h4 id="子组件加减功能实现"><a href="#子组件加减功能实现" class="headerlink" title="子组件加减功能实现"></a>子组件加减功能实现</h4><p>@&#x2F;components&#x2F;Son1Com.vue</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    Son1Com.vue - &#123;&#123; counterStore.count &#125;&#125; - <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;counterStore.addCount&quot;</span>&gt;</span>+<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>@&#x2F;components&#x2F;Son2Com.vue</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    Son2Com.vue - &#123;&#123; counterStore.count &#125;&#125; - <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;counterStore.subCount&quot;</span>&gt;</span>-<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="方法定义："><a href="#方法定义：" class="headerlink" title="方法定义："></a>方法定义：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> greeting = &#123;</span><br><span class="line">  <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">greeting.<span class="title function_">sayHello</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>Vue3</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
-    <title>JavaScript中的Apply()方法</title>
-    <url>/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>属性名表达式</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="属性名表达式"><a href="#属性名表达式" class="headerlink" title="属性名表达式"></a>属性名表达式</h1><blockquote>
+<ol>
+<li>在JavaScript中，属性名表达式是用来指定对象的属性名的一种方式。</li>
+<li>属性名可以是一个字符串、一个变量、一个数字或一个表达式。</li>
+<li>属性名表达式允许你以动态的方式定义对象的属性名，而不仅仅是硬编码的字符串。</li>
+</ol>
+</blockquote>
+<h3 id="JavaScript语言定义对象的属性有两种方法"><a href="#JavaScript语言定义对象的属性有两种方法" class="headerlink" title="JavaScript语言定义对象的属性有两种方法"></a>JavaScript语言定义对象的属性有两种方法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line">obj.<span class="property">foo</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line">obj[<span class="string">&#x27;a&#x27;</span> + <span class="string">&#x27;bc&#x27;</span>] = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
-<p><strong>2、apply将数组转换为参数</strong></p>
-<p><strong>例如：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<p><strong>使用字符串字面量作为属性名：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用变量作为属性名：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> propertyName = <span class="string">&quot;address&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [propertyName]: <span class="string">&quot;123 Main St&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用数字作为属性名：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">const</span> colors = &#123;</span><br><span class="line">  [index]: <span class="string">&quot;red&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用表达式作为属性名：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> prefix = <span class="string">&quot;user_&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> userId = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">const</span> users = &#123;</span><br><span class="line">  [prefix + userId]: <span class="string">&quot;JohnDoe&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用计算属性名：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> prop = <span class="string">&quot;age&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>,</span><br><span class="line">  [prop]: <span class="number">25</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>方法的name属性</title>
+    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/</url>
+    <content><![CDATA[<h1 id="方法的name属性"><a href="#方法的name属性" class="headerlink" title="方法的name属性"></a>方法的name属性</h1><blockquote>
+<p>在 JavaScript 中，函数对象有一个 <code>name</code> 属性，该属性存储了函数的名称。这是一个<strong>只读属性</strong>，它表示<strong>函数的名字</strong>。函数的名称通常是在函数定义时指定的标识符。</p>
+</blockquote>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sayHello.<span class="property">name</span>); <span class="comment">// &quot;sayHello&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，在箭头函数中，<code>name</code> 属性的行为可能会有所不同。箭头函数的 <code>name</code> 属性通常是空字符串，除非它是通过变量赋值给一个标识符的。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">greet</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Greeting!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(greet.<span class="property">name</span>); <span class="comment">// &quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>name</code> 属性对于函数的调试和日志记录非常有用，因为它可以让你在不执行函数的情况下获取函数的名称。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Object.is()方法</title>
+    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a>Object.is()</h1><blockquote>
+<p>为了解决ES5只用两个运算符（ &#x3D;&#x3D; ）、（ &#x3D;&#x3D;&#x3D; ）</p>
+<blockquote>
+<p>（ &#x3D;&#x3D; ）运算时会自动转换类型</p>
+<p>（ &#x3D;&#x3D;&#x3D; ）运算 NaN 时不等于自身，+0 等于 -0</p>
+</blockquote>
+</blockquote>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">is</span>(value1, value2)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>value1</code>：第一个要比较的值。</li>
+<li><code>value2</code>：第二个要比较的值。</li>
+</ul>
+<p><code>Object.is()</code> 返回一个布尔值，表示两个值是否严格相等。如果相等，则返回 <code>true</code>；如果不相等，则返回 <code>false</code>。</p>
+<h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;hello&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="string">&quot;5&quot;</span>)); <span class="comment">// false，不同类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(+<span class="number">0</span>, -<span class="number">0</span>)); <span class="comment">// false，区分 +0 和 -0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="title class_">NaN</span>, <span class="title class_">NaN</span>)); <span class="comment">// true，区分 NaN</span></span><br></pre></td></tr></table></figure>
+
+<p><code>Object.is()</code> 的主要优点是它能够正确处理一些特殊情况，例如区分正零和负零，以及区分不同的 <code>NaN</code> 值。它在某些情况下更精确，但在其他情况下可能与 <code>===</code> 行为相同。通常情况下，你可以使用 <code>Object.is()</code> 来进行更严格的值比较，尤其是需要考虑特殊值的情况。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>属性的可枚举性</title>
+    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%AF%E6%9E%9A%E4%B8%BE%E6%80%A7/</url>
+    <content><![CDATA[<h1 id="属性的可枚举性"><a href="#属性的可枚举性" class="headerlink" title="属性的可枚举性"></a>属性的可枚举性</h1><blockquote>
+<p>在 JavaScript 中，每个对象都有属性的可枚举性（enumerability）。属性的可枚举性指定了属性是否会出现在对象的属性枚举中，例如在 <code>for...in</code> 循环中。</p>
+</blockquote>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置属性 a 为不可枚举</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj, <span class="string">&#x27;a&#x27;</span>, &#123; <span class="attr">enumerable</span>: <span class="literal">false</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历对象属性，只输出可枚举属性</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, obj[key]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，我们将属性 a 设置为不可枚举，因此在 for…in 循环中不会显示。属性 b 仍然是可枚举的。</p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>属性的可枚举性是一个很有用的特性，它允许你在需要时控制对象属性的可见性。你可以使用 <code>Object.keys()</code>、<code>Object.values()</code>、<code>Object.entries()</code> 等方法来获取对象的可枚举属性。这对于隐藏内部属性或控制属性的可访问性非常有用。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Object.assign()方法</title>
+    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/05%E3%80%81Object.assign()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Object-assign"><a href="#Object-assign" class="headerlink" title="Object.assign()"></a>Object.assign()</h1><blockquote>
+<p><code>Object.assign()</code> 是 JavaScript 中的一个静态方法，用于将一个或多个源对象的属性复制到目标对象中。这是一种对象合并的方法，它会<strong>修改目标对象</strong>，并<strong>返回目标对象</strong>。如果目标对象中已存在相同属性名的属性，则这些属性的值将被<strong>覆盖</strong>。</p>
+</blockquote>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source1, source2, ...sourceN)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>target</code>：目标对象，要将属性复制到该对象中。</li>
+<li><code>source1, source2, ...sourceN</code>：一个或多个源对象，从这些对象中复制属性。</li>
+</ul>
+<p><code>Object.assign()</code> 将源对象的属性复制到目标对象中，并返回修改后的目标对象。如果目标对象没有传入，它会返回一个空对象。</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> target = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">b</span>: <span class="number">3</span>, <span class="attr">c</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并 source 到 target</span></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: 1, b: 3, c: 4 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>需要注意的是，<code>Object.assign()</code> 是<strong>浅复制</strong>，它只复制属性的值，而不会复制属性值中的对象的引用。如果属性值是对象，它们仍然会引用相同的对象，而不会进行深度复制。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj1 = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: <span class="number">1</span> &#125; &#125;;</span><br><span class="line"><span class="keyword">const</span> obj2 = &#123; <span class="attr">a</span>: &#123; <span class="attr">c</span>: <span class="number">2</span> &#125; &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj1, obj2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: &#123; c: 2 &#125; &#125;，obj1.a 被 obj2.a 覆盖，不会深度合并</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果需要进行深度复制或深度合并，你需要使用递归或第三方库来实现。</p>
+</blockquote>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>Object.assign()</code> 方法是一种方便的方式来合并对象的属性，用于创建新的对象或修改现有对象的属性。</p>
+<h4 id="为对象添加属性"><a href="#为对象添加属性" class="headerlink" title="为对象添加属性"></a>为对象添加属性</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">assign</span>(<span class="variable language_">this</span>, &#123; x, y &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 相当于</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">x</span> = x;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">y</span> = y;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的方法通过 assign 方法将 x 属性和 y 属性添加到了 Point 类的对象实例中</p>
+<h4 id="为对象添加方法"><a href="#为对象添加方法" class="headerlink" title="为对象添加方法"></a>为对象添加方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 定义一个源对象，它包含一个方法 greet</span></span><br><span class="line"><span class="keyword">const</span> source = &#123;</span><br><span class="line">  <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个目标对象</span></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 Object.assign 将源对象的方法复制到目标对象</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用目标对象的方法</span></span><br><span class="line">target.<span class="title function_">greet</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>需要注意的是，<code>Object.assign()</code> 仅复制方法的引用，而不是创建方法的新副本。这意味着在目标对象上调用方法时，它实际上执行的是源对象上的<strong>同一个方法</strong>。如果你在目标对象上修改方法，也会<strong>影响源对象</strong>中的方法，因为它们引用的是相同的函数。</p>
+</blockquote>
+<h4 id="克隆对象"><a href="#克隆对象" class="headerlink" title="克隆对象"></a>克隆对象</h4><p><code>Object.assign()</code> 可以用于克隆对象，也就是创建一个与源对象具有相同属性和属性值的新对象。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 修改克隆对象不会影响源对象</span></span><br><span class="line">clone.<span class="property">name</span> = <span class="string">&quot;Bob&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Bob&quot;, age: 30 &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(source); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这种方式是一种<strong>浅克隆</strong>，如果源对象的属性值是对象，那么克隆对象仍然会引用相同的对象，因此它们是浅层复制。</p>
+<blockquote>
+<p>复制方法，做修改会修改源方法，而复制对象，做修改不会修改源对象 (对象内对象为引用)</p>
+</blockquote>
+<h4 id="合并多个对象"><a href="#合并多个对象" class="headerlink" title="合并多个对象"></a>合并多个对象</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并为新对象的方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, ...sources);</span><br></pre></td></tr></table></figure>
+
+<p>使用示例</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"><span class="keyword">const</span> source1 = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source2 = &#123; <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source3 = &#123; <span class="attr">city</span>: <span class="string">&quot;New York&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 merge 函数合并多个对象的属性到目标对象</span></span><br><span class="line"><span class="title function_">merge</span>(target, source1, source2, source3);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(target); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30, city: &quot;New York&quot; &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个函数非常实用，因为它可以在合并对象时减少代码的重复性，而且它使得合并多个对象的操作更加清晰和简洁。如果你需要频繁进行对象属性合并操作，这个函数会很有帮助。</p>
+<h4 id="为属性指定默认值"><a href="#为属性指定默认值" class="headerlink" title="为属性指定默认值"></a>为属性指定默认值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> defaults = &#123;</span><br><span class="line">    <span class="attr">logLevel</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">outputFormat</span>: <span class="string">&#x27;html&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">processContent</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    options = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, defaults, options);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(options);</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果传入的选项中没有某些属性，它们将从默认选项中继承，从而提供了默认值。</p>
+<p>这是一种常见的模式，用于在函数中处理选项，确保传入选项对象中缺失的属性具有默认值。这使得函数更加灵活，用户可以根据需要选择是否提供特定选项，而不必为每个选项都提供一个值。</p>
+<p>示例中的代码在处理选项时非常实用，特别是在库或框架中，用于为函数提供配置选项时。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -327,7 +486,42 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>属性的遍历</title>
+    <url>/Merhecc/2023/10/16/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E9%81%8D%E5%8E%86/</url>
+    <content><![CDATA[<h1 id="属性的遍历"><a href="#属性的遍历" class="headerlink" title="属性的遍历"></a>属性的遍历</h1><blockquote>
+<p>ES6一共有5种方法可以遍历对象的属性</p>
+</blockquote>
+<h3 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h3><p><code>for...in</code> 循环可用于遍历对象的可枚举属性，包括继承的属性。它会迭代对象的属性名（键）。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> person) &#123;</span><br><span class="line">  <span class="keyword">if</span> (person.<span class="title function_">hasOwnProperty</span>(key)) &#123; <span class="comment">// 过滤掉继承的属性</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br></pre></td></tr></table></figure>
+
+<p>请注意，<code>for...in</code> 循环也会遍历继承的属性，因此你可能需要使用 <code>hasOwnProperty</code> 方法来过滤只获取对象自身的属性。</p>
+<h3 id="Object-keys"><a href="#Object-keys" class="headerlink" title="Object.keys()"></a><strong>Object.keys()</strong></h3><p><code>Object.keys()</code> 方法返回一个包含对象自身<strong>可枚举属性</strong>的属性名数组。它不会包括继承的属性。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> keys = <span class="title class_">Object</span>.<span class="title function_">keys</span>(person); <span class="comment">// [&#x27;firstName&#x27;, &#x27;lastName&#x27;, &#x27;age&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">of</span> keys) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出结果与上面相同</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Object-getOwnPropertyNames"><a href="#Object-getOwnPropertyNames" class="headerlink" title="Object.getOwnPropertyNames("></a>Object.getOwnPropertyNames(</h3><p><code>Object.getOwnPropertyNames()</code> 方法返回一个包含对象自身所有属性（包括不可枚举属性）的属性名数组。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加一个不可枚举属性</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person, <span class="string">&quot;email&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="string">&quot;john.doe@example.com&quot;</span>,</span><br><span class="line">  <span class="attr">enumerable</span>: <span class="literal">false</span>, <span class="comment">// 设置为不可枚举</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> propertyNames = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertyNames</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> propertyName <span class="keyword">of</span> propertyNames) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(propertyName, person[propertyName]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br><span class="line"><span class="comment">// email john.doe@example.com</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，<code>Object.getOwnPropertyNames(person)</code> 返回一个数组 <code>[&quot;firstName&quot;, &quot;lastName&quot;, &quot;age&quot;, &quot;email&quot;]</code>，其中包含了对象 <code>person</code> 的自身所有属性的属性名，包括不可枚举属性 “email”。然后，使用 <code>for...of</code> 循环遍历这个数组，并访问每个属性的值，打印出属性名和属性值。</p>
+<p>需要注意的是，<code>Object.getOwnPropertyNames()</code> 返回的数组包括了对象的所有属性，包括不可枚举属性。这使得它适用于需要遍历对象的所有属性的情况。如果你只关心可枚举属性，可以使用 <code>Object.keys()</code> 方法。</p>
+<h3 id="Object-getOwnPropertySymbols"><a href="#Object-getOwnPropertySymbols" class="headerlink" title="Object.getOwnPropertySymbols()"></a>Object.getOwnPropertySymbols()</h3><p><code>Object.getOwnPropertySymbols()</code> 方法返回一个包含对象自身所有符号属性的符号数组。符号属性是 ES6 引入的一种特殊属性类型，通常用于创建私有属性或避免属性名冲突。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> key1 = <span class="title class_">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> key2 = <span class="title class_">Symbol</span>(<span class="string">&quot;key2&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [key1]: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  [key2]: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> symbols = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertySymbols</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> symbol <span class="keyword">of</span> symbols) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(symbol, person[symbol]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Symbol(key1) &#x27;John&#x27;</span></span><br><span class="line"><span class="comment">// Symbol(key2) &#x27;Doe&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>在这个示例中，我们创建了两个符号属性 <code>key1</code> 和 <code>key2</code>，并将它们添加到对象 <code>person</code> 中。然后，使用 <code>Object.getOwnPropertySymbols(person)</code> 返回一个包含这些符号属性的数组。最后，使用 <code>for...of</code> 循环遍历符号数组，并访问每个符号属性的值，打印出符号和对应的属性值。</p>
+<p>符号属性通常用于在对象中存储私有或特定用途的属性，因为它们不容易被意外覆盖或访问。这使得符号属性在创建库或框架中的封装和隔离特定属性时非常有用。</p>
+<h3 id="Reflect-ownKeys"><a href="#Reflect-ownKeys" class="headerlink" title="Reflect.ownKeys()"></a>Reflect.ownKeys()</h3><p><code>Reflect.ownKeys()</code> 方法返回一个包含对象自身所有属性的数组，包括字符串键、符号键以及不可枚举属性。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> key1 = <span class="title class_">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [key1]: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加一个不可枚举属性</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person, <span class="string">&quot;email&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="string">&quot;john.doe@example.com&quot;</span>,</span><br><span class="line">  <span class="attr">enumerable</span>: <span class="literal">false</span>, <span class="comment">// 设置为不可枚举</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> keys = <span class="title class_">Reflect</span>.<span class="title function_">ownKeys</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">of</span> keys) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br><span class="line"><span class="comment">// email john.doe@example.com</span></span><br><span class="line"><span class="comment">// Symbol(key1) &#x27;John&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>Reflect.ownKeys()</code> 方法提供了一种全面的方式来获取对象自身的所有属性，无论它们是字符串键、符号键还是不可枚举属性。这使得它在需要全面了解对象属性的情况下非常有用。</p>
+]]></content>
+      <categories>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -394,50 +588,7 @@
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="title function_">map</span>([</span><br><span class="line">    [<span class="number">1</span>, <span class="string">&#x27;one&#x27;</span>],</span><br><span class="line">    [<span class="number">2</span>, <span class="string">&#x27;two&#x27;</span>],</span><br><span class="line">    [<span class="number">3</span>, <span class="string">&#x27;three&#x27;</span>],</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arr = [...map.<span class="title function_">keys</span>()]; <span class="comment">// [1, 2, 3]</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Array.of()方法</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a>Array.of()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
-<p>Array.of 方法用于将一组值转换为数组</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Array</span>.<span class="title function_">of</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="引入原因"><a href="#引入原因" class="headerlink" title="引入原因"></a>引入原因</h3><p>弥补数组构造函数 Array() 的不足：Array() 会因为参数个数不同而返回不同结果</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Array</span>() <span class="comment">// []</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>) <span class="comment">// [, , ,]</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="因此，Array-of-替代了-Array-、new-Array"><a href="#因此，Array-of-替代了-Array-、new-Array" class="headerlink" title="因此，Array.of() 替代了 Array() 、new Array()"></a>因此，Array.of() 替代了 Array() 、new Array()</h3>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>copyWithin()方法</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/09%E3%80%81copyWithin()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="copyWithin"><a href="#copyWithin" class="headerlink" title="copyWithin()"></a>copyWithin()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
-<p>将数组指定下标的值，复制到指定位置，这会修改原数组</p>
-<p>Array.prototype.copyWithin(<strong>target, start &#x3D; 0, end &#x3D; this.length</strong>)</p>
-<blockquote>
-<p>target（必选）：从该位置开始替换数据。</p>
-<p>start（可选）：从该位置开始读取数据，默认为0。负值表示倒数。</p>
-<p>end（可选）：到该位置前停止读取数据，默认等于数组长度。负值表示倒数。</p>
-</blockquote>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].<span class="title function_">copyWithin</span>(<span class="number">0</span>, <span class="number">3</span>)</span><br><span class="line"><span class="comment">// [4, 5, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -463,23 +614,70 @@
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
-    <title>数据类型检测</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
-    <content><![CDATA[<ol>
-<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
-<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
-<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
-</ol>
+    <title>JavaScript中的Apply()方法</title>
+    <url>/Merhecc/2023/10/08/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81apply%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p><strong>apply函数的一般形式为function.apply(对象, 数组)</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Hello</span>, \$&#123;name&#125;! I am $&#123;~<span class="variable language_">this</span>.<span class="property">name</span>&#125;.);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;John&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 使用 apply 方法将 person 对象作为上下文，并传递参数 &#x27;Alice&#x27;</span></span><br><span class="line">greet.<span class="title function_">apply</span>(person, [<span class="string">&#x27;Alice&#x27;</span>]); <span class="comment">// 输出：Hello, Alice! I am John.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>1、也就是说如果不使用apply()，greet()就找不到这个this.name。</strong></p>
+<p><strong>2、apply将数组转换为参数</strong></p>
+<p><strong>例如：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">sum</span> = (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span>, z = <span class="number">3</span></span>) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> params = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// ...为展开运算符</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">sum</span>(...params));</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sum.<span class="title function_">apply</span>(<span class="literal">undefined</span>, params)); <span class="comment">// ES5方法，输出结构为12</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Array.of()方法</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/08%E3%80%81Array.of()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of()"></a>Array.of()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
+<p>Array.of 方法用于将一组值转换为数组</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Array</span>.<span class="title function_">of</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="引入原因"><a href="#引入原因" class="headerlink" title="引入原因"></a>引入原因</h3><p>弥补数组构造函数 Array() 的不足：Array() 会因为参数个数不同而返回不同结果</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Array</span>() <span class="comment">// []</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>) <span class="comment">// [, , ,]</span></span><br><span class="line"><span class="title class_">Array</span>(<span class="number">3</span>, <span class="number">11</span>, <span class="number">8</span>) <span class="comment">// [3, 11, 8]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="因此，Array-of-替代了-Array-、new-Array"><a href="#因此，Array-of-替代了-Array-、new-Array" class="headerlink" title="因此，Array.of() 替代了 Array() 、new Array()"></a>因此，Array.of() 替代了 Array() 、new Array()</h3>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>copyWithin()方法</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/09%E3%80%81copyWithin()%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="copyWithin"><a href="#copyWithin" class="headerlink" title="copyWithin()"></a>copyWithin()</h1><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
+<p>将数组指定下标的值，复制到指定位置，这会修改原数组</p>
+<p>Array.prototype.copyWithin(<strong>target, start &#x3D; 0, end &#x3D; this.length</strong>)</p>
+<blockquote>
+<p>target（必选）：从该位置开始替换数据。</p>
+<p>start（可选）：从该位置开始读取数据，默认为0。负值表示倒数。</p>
+<p>end（可选）：到该位置前停止读取数据，默认等于数组长度。负值表示倒数。</p>
+</blockquote>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>].<span class="title function_">copyWithin</span>(<span class="number">0</span>, <span class="number">3</span>)</span><br><span class="line"><span class="comment">// [4, 5, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -517,7 +715,23 @@
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据类型检测</title>
+    <url>/Merhecc/2023/10/12/JavaScript/%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%20/</url>
+    <content><![CDATA[<ol>
+<li>对于一般的数据类型检测，<strong>typeof</strong> 和 <strong>Object.prototype.toString.call()</strong> 是常用的方法。</li>
+<li>如果你需要检测数组，使用 <strong>Array.isArray()</strong> 更清晰和精确。</li>
+<li>如果涉及到自定义对象或构造函数，<strong>instanceof</strong> 可能更合适。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -545,7 +759,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
@@ -562,223 +776,60 @@
 
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
         <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
-    <title>属性的简洁表示法</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/01%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E7%AE%80%E6%B4%81%E8%A1%A8%E7%A4%BA%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h1><blockquote>
-<p>对象属性的简洁表示法是一种语法糖，允许你更简洁地定义对象属性</p>
+    <title>定义使用Pinia</title>
+    <url>/Merhecc/2023/10/17/Vue3/Pinia/01%E3%80%81%E5%AE%9A%E4%B9%89%E4%BD%BF%E7%94%A8Pinia/</url>
+    <content><![CDATA[<h1 id="Pinia"><a href="#Pinia" class="headerlink" title="Pinia"></a>Pinia</h1><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote>
+<p>Pinia 是 Vue 的专属状态管理库，它允许你跨组件或页面共享状态。</p>
 </blockquote>
-<h3 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h3><p>当属性名和属性值的变量名相同时，你可以只写变量名，而不需要重复书写属性名和赋值符。</p>
-<h4 id="对象属性："><a href="#对象属性：" class="headerlink" title="对象属性："></a>对象属性：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> name = <span class="string">&quot;Alice&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> age = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用简洁表示法创建对象</span></span><br><span class="line"><span class="keyword">const</span> person = &#123; name, age &#125;;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="方法定义："><a href="#方法定义：" class="headerlink" title="方法定义："></a>方法定义：</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> greeting = &#123;</span><br><span class="line">  <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">greeting.<span class="title function_">sayHello</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>属性名表达式</title>
-    <url>/Merhecc/2023/10/12/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/02%E3%80%81%E5%B1%9E%E6%80%A7%E5%90%8D%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="属性名表达式"><a href="#属性名表达式" class="headerlink" title="属性名表达式"></a>属性名表达式</h1><blockquote>
+<p>优点：</p>
 <ol>
-<li>在JavaScript中，属性名表达式是用来指定对象的属性名的一种方式。</li>
-<li>属性名可以是一个字符串、一个变量、一个数字或一个表达式。</li>
-<li>属性名表达式允许你以动态的方式定义对象的属性名，而不仅仅是硬编码的字符串。</li>
+<li><strong>TypeScript 支持</strong>：Pinia 是为 TypeScript 设计的，提供了完整的类型推断和类型安全。这意味着您可以在编译时捕获很多常见的错误，减少运行时错误。</li>
+<li><strong>更好的性能</strong>：Pinia 采用了类似 Vuex 4 的响应式数据结构，并使用 Vue 3 的响应式系统，这使得状态的管理更加高效。同时，Pinia 支持多个根状态，这可以在大型应用中提高性能。</li>
+<li><strong>模块化设计</strong>：Pinia 使用模块化的状态存储，将状态逻辑分割成多个模块，使得应用的状态管理更有组织性和可维护性。</li>
+<li><strong>Composable 函数</strong>：您可以将状态逻辑封装为可复用的 composable 函数，这使得状态逻辑的共享和重用更加容易。</li>
+<li><strong>Devtools 集成</strong>：Pinia 集成了 Vue Devtools，方便开发者调试和监视应用的状态和状态变更。</li>
+<li><strong>异步处理</strong>：Pinia 内置了用于处理异步操作的插件，如 Actions 插件，可以简化异步数据的处理。</li>
 </ol>
-</blockquote>
-<h3 id="JavaScript语言定义对象的属性有两种方法"><a href="#JavaScript语言定义对象的属性有两种方法" class="headerlink" title="JavaScript语言定义对象的属性有两种方法"></a>JavaScript语言定义对象的属性有两种方法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line">obj.<span class="property">foo</span> = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line">obj[<span class="string">&#x27;a&#x27;</span> + <span class="string">&#x27;bc&#x27;</span>] = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 导入：</span></span><br><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useCounterStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;counter&#x27;</span>, <span class="function">() =&gt;</span> &#123;...&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 组件导入：</span></span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>使用字符串字面量作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="Pinia计数器"><a href="#Pinia计数器" class="headerlink" title="Pinia计数器"></a>Pinia计数器</h4><p>@&#x2F;store&#x2F;counter.js</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; computed, ref &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useCounterStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;counter&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">//声明数据 state - count</span></span><br><span class="line">    <span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">666</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明操作数据的方法 action</span></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">addCount</span> = (<span class="params"></span>) =&gt; count.<span class="property">value</span>++</span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">subCount</span> = (<span class="params"></span>) =&gt; count.<span class="property">value</span>--</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明基于数据派生的计算属性 getters (computed)</span></span><br><span class="line">    <span class="keyword">const</span> double = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> count.<span class="property">value</span> * <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明数据 state - msg</span></span><br><span class="line">    <span class="keyword">const</span> msg = <span class="title function_">ref</span>(<span class="string">&#x27;hello pinia&#x27;</span>)</span><br><span class="line">	</span><br><span class="line">    <span class="comment">//return 语句返回了一个对象，使它们可以在其他组件中使用。</span></span><br><span class="line">    <span class="keyword">return</span> &#123; </span><br><span class="line">        count,</span><br><span class="line">        msg,</span><br><span class="line">        addCount,</span><br><span class="line">        subCount,</span><br><span class="line">        double</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="comment">//开启当前模块的持久化,</span></span><br><span class="line">    <span class="attr">persist</span>: &#123;</span><br><span class="line">        <span class="attr">key</span>: <span class="string">&#x27;靓仔&#x27;</span>,</span><br><span class="line">        <span class="attr">paths</span>: [<span class="string">&#x27;count&#x27;</span>]</span><br><span class="line">    &#125; </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<p><strong>使用变量作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> propertyName = <span class="string">&quot;address&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [propertyName]: <span class="string">&quot;123 Main St&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用数字作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> index = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">const</span> colors = &#123;</span><br><span class="line">  [index]: <span class="string">&quot;red&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用表达式作为属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> prefix = <span class="string">&quot;user_&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> userId = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">const</span> users = &#123;</span><br><span class="line">  [prefix + userId]: <span class="string">&quot;JohnDoe&quot;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><strong>使用计算属性名：</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> prop = <span class="string">&quot;age&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>,</span><br><span class="line">  [prop]: <span class="number">25</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>方法的name属性</title>
-    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/03%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84name%E5%B1%9E%E6%80%A7/</url>
-    <content><![CDATA[<h1 id="方法的name属性"><a href="#方法的name属性" class="headerlink" title="方法的name属性"></a>方法的name属性</h1><blockquote>
-<p>在 JavaScript 中，函数对象有一个 <code>name</code> 属性，该属性存储了函数的名称。这是一个<strong>只读属性</strong>，它表示<strong>函数的名字</strong>。函数的名称通常是在函数定义时指定的标识符。</p>
-</blockquote>
-<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">sayHello</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(sayHello.<span class="property">name</span>); <span class="comment">// &quot;sayHello&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，在箭头函数中，<code>name</code> 属性的行为可能会有所不同。箭头函数的 <code>name</code> 属性通常是空字符串，除非它是通过变量赋值给一个标识符的。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">greet</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Greeting!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(greet.<span class="property">name</span>); <span class="comment">// &quot;&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>name</code> 属性对于函数的调试和日志记录非常有用，因为它可以让你在不执行函数的情况下获取函数的名称。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Object.is()方法</title>
-    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/04%E3%80%81Object.is()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a>Object.is()</h1><blockquote>
-<p>为了解决ES5只用两个运算符（ &#x3D;&#x3D; ）、（ &#x3D;&#x3D;&#x3D; ）</p>
-<blockquote>
-<p>（ &#x3D;&#x3D; ）运算时会自动转换类型</p>
-<p>（ &#x3D;&#x3D;&#x3D; ）运算 NaN 时不等于自身，+0 等于 -0</p>
-</blockquote>
-</blockquote>
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">is</span>(value1, value2)</span><br></pre></td></tr></table></figure>
-
+<p>在配置对象中，使用 <code>persist</code> 属性配置了模块的持久化选项：</p>
 <ul>
-<li><code>value1</code>：第一个要比较的值。</li>
-<li><code>value2</code>：第二个要比较的值。</li>
+<li><code>key: &#39;靓仔&#39;</code>：指定了持久化存储的键名，用于存储 <code>count</code> 的值。</li>
+<li><code>paths: [&#39;count&#39;]</code>：指定了要持久化的数据属性，这里只持久化 <code>count</code>。</li>
 </ul>
-<p><code>Object.is()</code> 返回一个布尔值，表示两个值是否严格相等。如果相等，则返回 <code>true</code>；如果不相等，则返回 <code>false</code>。</p>
-<h3 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="number">5</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;hello&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="number">5</span>, <span class="string">&quot;5&quot;</span>)); <span class="comment">// false，不同类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(+<span class="number">0</span>, -<span class="number">0</span>)); <span class="comment">// false，区分 +0 和 -0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">is</span>(<span class="title class_">NaN</span>, <span class="title class_">NaN</span>)); <span class="comment">// true，区分 NaN</span></span><br></pre></td></tr></table></figure>
+<h4 id="Pinia异步获取数据"><a href="#Pinia异步获取数据" class="headerlink" title="Pinia异步获取数据"></a>Pinia异步获取数据</h4><p>@&#x2F;store&#x2F;channel.js</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; defineStore &#125; <span class="keyword">from</span> <span class="string">&quot;pinia&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; ref &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> useChannelStore = <span class="title function_">defineStore</span>(<span class="string">&#x27;channel&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> channelList = <span class="title function_">ref</span>([])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> <span class="title function_">getList</span> = <span class="keyword">async</span> (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">        <span class="comment">//支持异步</span></span><br><span class="line">        <span class="keyword">const</span> &#123; <span class="attr">data</span>: &#123; data &#125; &#125; = <span class="keyword">await</span> axios.<span class="title function_">get</span>(<span class="string">&#x27;http://geek.itheima.net/v1_0/channels&#x27;</span>)</span><br><span class="line">        channelList.<span class="property">value</span> = data.<span class="property">channels</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(data.<span class="property">channels</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        channelList,</span><br><span class="line">        getList</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<p><code>Object.is()</code> 的主要优点是它能够正确处理一些特殊情况，例如区分正零和负零，以及区分不同的 <code>NaN</code> 值。它在某些情况下更精确，但在其他情况下可能与 <code>===</code> 行为相同。通常情况下，你可以使用 <code>Object.is()</code> 来进行更严格的值比较，尤其是需要考虑特殊值的情况。</p>
+
+
+<h4 id="功能页面"><a href="#功能页面" class="headerlink" title="功能页面"></a>功能页面</h4><p>App.vue</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; storeToRefs &#125; <span class="keyword">from</span> <span class="string">&#x27;pinia&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Son1Com</span> <span class="keyword">from</span> <span class="string">&#x27;@/components/Son1Com.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Son2Com</span> <span class="keyword">from</span> <span class="string">&#x27;@/components/Son2Com.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; useChannelStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/channel&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line"><span class="keyword">const</span> channelStore = <span class="title function_">useChannelStore</span>()</span><br><span class="line"><span class="comment">// console.log(counterStore);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123; count, msg &#125; = <span class="title function_">storeToRefs</span>(counterStore)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>根组件 - &#123;&#123; count &#125;&#125; &#123;&#123; msg &#125;&#125; - &#123;&#123; counterStore.double &#125;&#125;<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son1Com</span>&gt;</span><span class="tag">&lt;/<span class="name">Son1Com</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">Son2Com</span>&gt;</span><span class="tag">&lt;/<span class="name">Son2Com</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;channelStore.getList&quot;</span>&gt;</span>获取频道数据<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in channelStore.channelList&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="子组件加减功能实现"><a href="#子组件加减功能实现" class="headerlink" title="子组件加减功能实现"></a>子组件加减功能实现</h4><p>@&#x2F;components&#x2F;Son1Com.vue</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    Son1Com.vue - &#123;&#123; counterStore.count &#125;&#125; - <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;counterStore.addCount&quot;</span>&gt;</span>+<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>@&#x2F;components&#x2F;Son2Com.vue</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; useCounterStore &#125; <span class="keyword">from</span> <span class="string">&#x27;@/store/counter&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> counterStore = <span class="title function_">useCounterStore</span>()</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    Son2Com.vue - &#123;&#123; counterStore.count &#125;&#125; - <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;counterStore.subCount&quot;</span>&gt;</span>-<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Object.assign()方法</title>
-    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/05%E3%80%81Object.assign()%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="Object-assign"><a href="#Object-assign" class="headerlink" title="Object.assign()"></a>Object.assign()</h1><blockquote>
-<p><code>Object.assign()</code> 是 JavaScript 中的一个静态方法，用于将一个或多个源对象的属性复制到目标对象中。这是一种对象合并的方法，它会<strong>修改目标对象</strong>，并<strong>返回目标对象</strong>。如果目标对象中已存在相同属性名的属性，则这些属性的值将被<strong>覆盖</strong>。</p>
-</blockquote>
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source1, source2, ...sourceN)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>target</code>：目标对象，要将属性复制到该对象中。</li>
-<li><code>source1, source2, ...sourceN</code>：一个或多个源对象，从这些对象中复制属性。</li>
-</ul>
-<p><code>Object.assign()</code> 将源对象的属性复制到目标对象中，并返回修改后的目标对象。如果目标对象没有传入，它会返回一个空对象。</p>
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> target = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">b</span>: <span class="number">3</span>, <span class="attr">c</span>: <span class="number">4</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并 source 到 target</span></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: 1, b: 3, c: 4 &#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><p>需要注意的是，<code>Object.assign()</code> 是<strong>浅复制</strong>，它只复制属性的值，而不会复制属性值中的对象的引用。如果属性值是对象，它们仍然会引用相同的对象，而不会进行深度复制。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj1 = &#123; <span class="attr">a</span>: &#123; <span class="attr">b</span>: <span class="number">1</span> &#125; &#125;;</span><br><span class="line"><span class="keyword">const</span> obj2 = &#123; <span class="attr">a</span>: &#123; <span class="attr">c</span>: <span class="number">2</span> &#125; &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> merged = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj1, obj2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(merged); <span class="comment">// &#123; a: &#123; c: 2 &#125; &#125;，obj1.a 被 obj2.a 覆盖，不会深度合并</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>如果需要进行深度复制或深度合并，你需要使用递归或第三方库来实现。</p>
-</blockquote>
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p><code>Object.assign()</code> 方法是一种方便的方式来合并对象的属性，用于创建新的对象或修改现有对象的属性。</p>
-<h4 id="为对象添加属性"><a href="#为对象添加属性" class="headerlink" title="为对象添加属性"></a>为对象添加属性</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="title class_">Object</span>.<span class="title function_">assign</span>(<span class="variable language_">this</span>, &#123; x, y &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 相当于</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span> &#123;</span><br><span class="line">  <span class="title function_">constructor</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">x</span> = x;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">y</span> = y;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的方法通过 assign 方法将 x 属性和 y 属性添加到了 Point 类的对象实例中</p>
-<h4 id="为对象添加方法"><a href="#为对象添加方法" class="headerlink" title="为对象添加方法"></a>为对象添加方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 定义一个源对象，它包含一个方法 greet</span></span><br><span class="line"><span class="keyword">const</span> source = &#123;</span><br><span class="line">  <span class="attr">greet</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个目标对象</span></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 Object.assign 将源对象的方法复制到目标对象</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">assign</span>(target, source);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用目标对象的方法</span></span><br><span class="line">target.<span class="title function_">greet</span>(); <span class="comment">// &quot;Hello!&quot;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>需要注意的是，<code>Object.assign()</code> 仅复制方法的引用，而不是创建方法的新副本。这意味着在目标对象上调用方法时，它实际上执行的是源对象上的<strong>同一个方法</strong>。如果你在目标对象上修改方法，也会<strong>影响源对象</strong>中的方法，因为它们引用的是相同的函数。</p>
-</blockquote>
-<h4 id="克隆对象"><a href="#克隆对象" class="headerlink" title="克隆对象"></a>克隆对象</h4><p><code>Object.assign()</code> 可以用于克隆对象，也就是创建一个与源对象具有相同属性和属性值的新对象。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> source = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span>, <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> clone = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, source);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 修改克隆对象不会影响源对象</span></span><br><span class="line">clone.<span class="property">name</span> = <span class="string">&quot;Bob&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(clone); <span class="comment">// &#123; name: &quot;Bob&quot;, age: 30 &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(source); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30 &#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这种方式是一种<strong>浅克隆</strong>，如果源对象的属性值是对象，那么克隆对象仍然会引用相同的对象，因此它们是浅层复制。</p>
-<blockquote>
-<p>复制方法，做修改会修改源方法，而复制对象，做修改不会修改源对象 (对象内对象为引用)</p>
-</blockquote>
-<h4 id="合并多个对象"><a href="#合并多个对象" class="headerlink" title="合并多个对象"></a>合并多个对象</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 合并为新对象的方法</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, ...sources);</span><br></pre></td></tr></table></figure>
-
-<p>使用示例</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">merge</span> = (<span class="params">target, ...sources</span>) =&gt; <span class="title class_">Object</span>.<span class="title function_">assign</span>(target, ...sources);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> target = &#123;&#125;;</span><br><span class="line"><span class="keyword">const</span> source1 = &#123; <span class="attr">name</span>: <span class="string">&quot;Alice&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source2 = &#123; <span class="attr">age</span>: <span class="number">30</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> source3 = &#123; <span class="attr">city</span>: <span class="string">&quot;New York&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 merge 函数合并多个对象的属性到目标对象</span></span><br><span class="line"><span class="title function_">merge</span>(target, source1, source2, source3);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(target); <span class="comment">// &#123; name: &quot;Alice&quot;, age: 30, city: &quot;New York&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这个函数非常实用，因为它可以在合并对象时减少代码的重复性，而且它使得合并多个对象的操作更加清晰和简洁。如果你需要频繁进行对象属性合并操作，这个函数会很有帮助。</p>
-<h4 id="为属性指定默认值"><a href="#为属性指定默认值" class="headerlink" title="为属性指定默认值"></a>为属性指定默认值</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> defaults = &#123;</span><br><span class="line">    <span class="attr">logLevel</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">outputFormat</span>: <span class="string">&#x27;html&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">processContent</span>(<span class="params">options</span>) &#123;</span><br><span class="line">    options = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, defaults, options);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(options);</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果传入的选项中没有某些属性，它们将从默认选项中继承，从而提供了默认值。</p>
-<p>这是一种常见的模式，用于在函数中处理选项，确保传入选项对象中缺失的属性具有默认值。这使得函数更加灵活，用户可以根据需要选择是否提供特定选项，而不必为每个选项都提供一个值。</p>
-<p>示例中的代码在处理选项时非常实用，特别是在库或框架中，用于为函数提供配置选项时。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>属性的可枚举性</title>
-    <url>/Merhecc/2023/10/13/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/06%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E5%8F%AF%E6%9E%9A%E4%B8%BE%E6%80%A7/</url>
-    <content><![CDATA[<h1 id="属性的可枚举性"><a href="#属性的可枚举性" class="headerlink" title="属性的可枚举性"></a>属性的可枚举性</h1><blockquote>
-<p>在 JavaScript 中，每个对象都有属性的可枚举性（enumerability）。属性的可枚举性指定了属性是否会出现在对象的属性枚举中，例如在 <code>for...in</code> 循环中。</p>
-</blockquote>
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123; <span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置属性 a 为不可枚举</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj, <span class="string">&#x27;a&#x27;</span>, &#123; <span class="attr">enumerable</span>: <span class="literal">false</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历对象属性，只输出可枚举属性</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, obj[key]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在这个示例中，我们将属性 a 设置为不可枚举，因此在 for…in 循环中不会显示。属性 b 仍然是可枚举的。</p>
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>属性的可枚举性是一个很有用的特性，它允许你在需要时控制对象属性的可见性。你可以使用 <code>Object.keys()</code>、<code>Object.values()</code>、<code>Object.entries()</code> 等方法来获取对象的可枚举属性。这对于隐藏内部属性或控制属性的可访问性非常有用。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>属性的遍历</title>
-    <url>/Merhecc/2023/10/16/JavaScript/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/07%E3%80%81%E5%B1%9E%E6%80%A7%E7%9A%84%E9%81%8D%E5%8E%86/</url>
-    <content><![CDATA[<h1 id="属性的遍历"><a href="#属性的遍历" class="headerlink" title="属性的遍历"></a>属性的遍历</h1><blockquote>
-<p>ES6一共有5种方法可以遍历对象的属性</p>
-</blockquote>
-<h3 id="for…in"><a href="#for…in" class="headerlink" title="for…in"></a>for…in</h3><p><code>for...in</code> 循环可用于遍历对象的可枚举属性，包括继承的属性。它会迭代对象的属性名（键）。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> person) &#123;</span><br><span class="line">  <span class="keyword">if</span> (person.<span class="title function_">hasOwnProperty</span>(key)) &#123; <span class="comment">// 过滤掉继承的属性</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br></pre></td></tr></table></figure>
-
-<p>请注意，<code>for...in</code> 循环也会遍历继承的属性，因此你可能需要使用 <code>hasOwnProperty</code> 方法来过滤只获取对象自身的属性。</p>
-<h3 id="Object-keys"><a href="#Object-keys" class="headerlink" title="Object.keys()"></a><strong>Object.keys()</strong></h3><p><code>Object.keys()</code> 方法返回一个包含对象自身<strong>可枚举属性</strong>的属性名数组。它不会包括继承的属性。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> keys = <span class="title class_">Object</span>.<span class="title function_">keys</span>(person); <span class="comment">// [&#x27;firstName&#x27;, &#x27;lastName&#x27;, &#x27;age&#x27;]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">of</span> keys) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 输出结果与上面相同</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Object-getOwnPropertyNames"><a href="#Object-getOwnPropertyNames" class="headerlink" title="Object.getOwnPropertyNames("></a>Object.getOwnPropertyNames(</h3><p><code>Object.getOwnPropertyNames()</code> 方法返回一个包含对象自身所有属性（包括不可枚举属性）的属性名数组。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加一个不可枚举属性</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person, <span class="string">&quot;email&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="string">&quot;john.doe@example.com&quot;</span>,</span><br><span class="line">  <span class="attr">enumerable</span>: <span class="literal">false</span>, <span class="comment">// 设置为不可枚举</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> propertyNames = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertyNames</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> propertyName <span class="keyword">of</span> propertyNames) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(propertyName, person[propertyName]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出结果</span></span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br><span class="line"><span class="comment">// email john.doe@example.com</span></span><br></pre></td></tr></table></figure>
-
-<p>在这个示例中，<code>Object.getOwnPropertyNames(person)</code> 返回一个数组 <code>[&quot;firstName&quot;, &quot;lastName&quot;, &quot;age&quot;, &quot;email&quot;]</code>，其中包含了对象 <code>person</code> 的自身所有属性的属性名，包括不可枚举属性 “email”。然后，使用 <code>for...of</code> 循环遍历这个数组，并访问每个属性的值，打印出属性名和属性值。</p>
-<p>需要注意的是，<code>Object.getOwnPropertyNames()</code> 返回的数组包括了对象的所有属性，包括不可枚举属性。这使得它适用于需要遍历对象的所有属性的情况。如果你只关心可枚举属性，可以使用 <code>Object.keys()</code> 方法。</p>
-<h3 id="Object-getOwnPropertySymbols"><a href="#Object-getOwnPropertySymbols" class="headerlink" title="Object.getOwnPropertySymbols()"></a>Object.getOwnPropertySymbols()</h3><p><code>Object.getOwnPropertySymbols()</code> 方法返回一个包含对象自身所有符号属性的符号数组。符号属性是 ES6 引入的一种特殊属性类型，通常用于创建私有属性或避免属性名冲突。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> key1 = <span class="title class_">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> key2 = <span class="title class_">Symbol</span>(<span class="string">&quot;key2&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [key1]: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  [key2]: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> symbols = <span class="title class_">Object</span>.<span class="title function_">getOwnPropertySymbols</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> symbol <span class="keyword">of</span> symbols) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(symbol, person[symbol]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Symbol(key1) &#x27;John&#x27;</span></span><br><span class="line"><span class="comment">// Symbol(key2) &#x27;Doe&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p>在这个示例中，我们创建了两个符号属性 <code>key1</code> 和 <code>key2</code>，并将它们添加到对象 <code>person</code> 中。然后，使用 <code>Object.getOwnPropertySymbols(person)</code> 返回一个包含这些符号属性的数组。最后，使用 <code>for...of</code> 循环遍历符号数组，并访问每个符号属性的值，打印出符号和对应的属性值。</p>
-<p>符号属性通常用于在对象中存储私有或特定用途的属性，因为它们不容易被意外覆盖或访问。这使得符号属性在创建库或框架中的封装和隔离特定属性时非常有用。</p>
-<h3 id="Reflect-ownKeys"><a href="#Reflect-ownKeys" class="headerlink" title="Reflect.ownKeys()"></a>Reflect.ownKeys()</h3><p><code>Reflect.ownKeys()</code> 方法返回一个包含对象自身所有属性的数组，包括字符串键、符号键以及不可枚举属性。</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> key1 = <span class="title class_">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> person = &#123;</span><br><span class="line">  [key1]: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">firstName</span>: <span class="string">&quot;John&quot;</span>,</span><br><span class="line">  <span class="attr">lastName</span>: <span class="string">&quot;Doe&quot;</span>,</span><br><span class="line">  <span class="attr">age</span>: <span class="number">30</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加一个不可枚举属性</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person, <span class="string">&quot;email&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="string">&quot;john.doe@example.com&quot;</span>,</span><br><span class="line">  <span class="attr">enumerable</span>: <span class="literal">false</span>, <span class="comment">// 设置为不可枚举</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> keys = <span class="title class_">Reflect</span>.<span class="title function_">ownKeys</span>(person);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">of</span> keys) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(key, person[key]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// firstName John</span></span><br><span class="line"><span class="comment">// lastName Doe</span></span><br><span class="line"><span class="comment">// age 30</span></span><br><span class="line"><span class="comment">// email john.doe@example.com</span></span><br><span class="line"><span class="comment">// Symbol(key1) &#x27;John&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>Reflect.ownKeys()</code> 方法提供了一种全面的方式来获取对象自身的所有属性，无论它们是字符串键、符号键还是不可枚举属性。这使得它在需要全面了解对象属性的情况下非常有用。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
+        <tag>Vue3</tag>
       </tags>
   </entry>
 </search>
